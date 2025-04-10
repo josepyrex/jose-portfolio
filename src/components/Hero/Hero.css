@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.typewriter-wrapper {
+  margin-bottom: 16px;
+}
+
+.typewriter-line {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.5;
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gray {
+  color: #AAAAAA;
+}
+
+.text-teal {
+  color: #2DD4BF;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background-color: #2DD4BF;
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .typewriter-line {
+    font-size: 24px;
+  }
+  .cursor {
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typewriter-line {
+    font-size: 18px;
+  }
+  .cursor {
+    height: 18px;
+  }
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scroll-arrow {
+    cursor: pointer;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }

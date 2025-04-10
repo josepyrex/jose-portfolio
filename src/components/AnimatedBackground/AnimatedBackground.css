@@ -1,0 +1,47 @@
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .floating-element {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(45, 212, 191, 0.3) 0%, rgba(45, 212, 191, 0) 70%);
+    animation: float linear infinite;
+    bottom: -20%;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-120vh) rotate(360deg);
+    }
+  }
+  
+  /* Additional variant for some elements */
+  .floating-element:nth-child(3n) {
+    background: radial-gradient(circle at center, rgba(138, 133, 255, 0.2) 0%, rgba(138, 133, 255, 0) 70%);
+  }
+  
+  .floating-element:nth-child(3n+1) {
+    animation-name: float-alt;
+  }
+  
+  @keyframes float-alt {
+    0% {
+      transform: translateY(0) rotate(0deg) translateX(0);
+    }
+    50% {
+      transform: translateY(-60vh) rotate(180deg) translateX(30px);
+    }
+    100% {
+      transform: translateY(-120vh) rotate(360deg) translateX(0);
+    }
+  }
