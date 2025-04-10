@@ -1,6 +1,7 @@
+// Updated Hero.js with darker background and restored dynamic background
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import AnimatedBackground from '../AnimatedBackground/AnimatedBackground';
+import DynamicBackground from '../DynamicBackground/DynamicBackground';
 
 function Hero() {
   const [text1, setText1] = useState('');
@@ -8,19 +9,13 @@ function Hero() {
   const [text3, setText3] = useState('');
   const [text4, setText4] = useState('');
   const [isTyping, setIsTyping] = useState(true);
-  const scrollDown = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: 'smooth'
-    });
-  };
   
   useEffect(() => {
     const typeLines = async () => {
-      const line1 = 'jose piereks';
-      const line2 = 'aspiring project manager';
-      const line3 = 'freelance web designer ';
-      const line4 = 'founder @ LiveNue';
+      const line1 = 'Jose Piereks';
+      const line2 = 'developer & designer';
+      const line3 = 'passionate about building';
+      const line4 = 'innovative solutions';
       
       // Type line 1
       for (let i = 0; i <= line1.length; i++) {
@@ -61,9 +56,16 @@ function Hero() {
     };
   }, []);
 
+  const scrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="hero">
-      <AnimatedBackground />
+      <DynamicBackground />
       <div className="text-container">
         <div className="typewriter-wrapper">
           <span className="typewriter-line text-white">{text1}</span>
@@ -86,16 +88,16 @@ function Hero() {
           {!isTyping && <span className="cursor"></span>}
         </div>
       </div>
+      
       <div className="scroll-indicator" onClick={scrollDown}>
         <div className="scroll-arrow">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 10L12 15L17 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            </div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 10L12 15L17 10" stroke="#2DD4BF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         </div>
+      </div>
     </div>
   );
-  
 }
 
 export default Hero;

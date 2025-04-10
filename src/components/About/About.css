@@ -1,0 +1,316 @@
+/* Enhanced src/components/About/About.css with color accents and design touches */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #121212;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background element */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.05) 0%, rgba(45, 212, 191, 0) 70%);
+  z-index: 0;
+}
+
+.about-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.03) 0%, rgba(45, 212, 191, 0) 70%);
+  z-index: 0;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-header {
+  padding: 60px 0;
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  max-width: 900px;
+}
+
+/* Accent color for highlighted text */
+.accent {
+  color: #2DD4BF;
+  position: relative;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* Accent divider highlight */
+.divider::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 1px;
+  background-color: rgba(45, 212, 191, 0.5);
+}
+
+.section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* News Ticker Styles with fade effect */
+.news-ticker-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.news-ticker-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 40px;
+  white-space: nowrap;
+  min-width: 200px;
+}
+
+.news-ticker {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fade-left, .fade-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #121212 0%, rgba(18, 18, 18, 0) 100%);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #121212 0%, rgba(18, 18, 18, 0) 100%);
+}
+
+.news-ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+  padding-right: 100px;
+}
+
+.news-ticker-content p {
+  display: inline-block;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* WHAT I DO and EXPERIENCE on the same line */
+.main-content-row {
+  display: flex;
+  padding: 20px 0;
+  gap: 60px;
+}
+
+.content-col {
+  flex: 1;
+}
+
+/* OTHER THINGS I'M DOING still in horizontal layout */
+.content-row {
+  display: flex;
+  padding: 20px 0;
+}
+
+.content-row .section-label {
+  min-width: 200px;
+}
+
+.section-content {
+  flex: 1;
+}
+
+.section-content p {
+  margin: 0 0 10px 0;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.section-content p:hover {
+  color: #ffffff;
+}
+
+/* Highlight some items with the accent color */
+.highlight-item {
+  position: relative;
+  padding-left: 12px;
+}
+
+.highlight-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #2DD4BF;
+}
+
+/* Experience section specific styles */
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateX(5px);
+}
+
+.experience-company {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.experience-year {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Other section specific styles */
+.other-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.other-item {
+  transition: transform 0.3s ease;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-5px);
+}
+
+.featured {
+  border-left: 2px solid #2DD4BF;
+  background-color: rgba(45, 212, 191, 0.05);
+}
+
+.featured:hover {
+  background-color: rgba(45, 212, 191, 0.08);
+}
+
+.other-item h4 {
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.other-item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .main-content-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .content-row {
+    flex-direction: column;
+  }
+  
+  .content-row .section-label {
+    margin-bottom: 15px;
+  }
+  
+  .other-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .news-ticker-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .news-ticker-label {
+    margin-bottom: 10px;
+  }
+}

@@ -1,3 +1,4 @@
+// Updated Header.js with new typography
 import React, { useState } from 'react';
 import './Header.css';
 
