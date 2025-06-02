@@ -1,4 +1,4 @@
-/* Updated Header.css with new typography */
+/* Updated Header.css with pill-shaped nav at the top */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
@@ -12,73 +12,21 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  transition: all 0.3s ease;
+  /* Transparent background for desktop */
+  background-color: transparent;
+}
+
+.header.scrolled {
+  padding: 15px 24px;
+  /* Add subtle background only when scrolled */
+  background-color: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(10px);
 }
 
 .logo {
   display: flex;
   align-items: center;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.moon {
-  font-size: 14px;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-}
-
-.toggle-input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #444;
-  transition: .4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #666;
-}
-
-input:checked + .slider:before {
-  transform: translateX(20px);
 }
 
 .nav-list {
@@ -88,10 +36,10 @@ input:checked + .slider:before {
 }
 
 .nav-item a {
-  color: var(--text-primary);
+  color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   transition: color 0.3s ease;
   letter-spacing: 0.02em;
@@ -101,78 +49,50 @@ input:checked + .slider:before {
   color: #2DD4BF;
 }
 
-/* Mobile Menu Styles */
-.mobile-menu-button {
+/* Mobile Tab Bar Navigation - pill shaped at the top */
+.mobile-tab-nav {
   display: none;
-  cursor: pointer;
-}
-
-.hamburger {
-  width: 24px;
-  height: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  transition: all 0.3s ease;
-}
-
-.hamburger.open span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-}
-
-.mobile-menu {
   position: fixed;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  background-color: rgba(18, 18, 18, 0.95);
+  top: 30px; /* Positioned at the top now */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 275px;
+  background-color: rgba(28, 28, 28, 0.95);
   backdrop-filter: blur(10px);
-  padding: 20px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
+  border-radius: 30px;
+  padding: 10px 10px;
+  z-index: 100;
+  justify-content: space-around;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(45, 212, 191, 0.15);
+}
+
+.tab-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.tab-item svg {
+  width: 22px;
+  height: 22px;
   transition: all 0.3s ease;
 }
 
-.mobile-menu.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.mobile-nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.mobile-nav-item a {
-  color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.mobile-nav-item a:hover {
+.tab-item:hover, .tab-item.active {
   color: #2DD4BF;
+  background-color: rgba(45, 212, 191, 0.1);
+}
+
+.tab-item:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 768px) {
@@ -180,7 +100,11 @@ input:checked + .slider:before {
     display: none;
   }
   
-  .mobile-menu-button {
-    display: block;
+  .mobile-tab-nav {
+    display: flex;
+  }
+  
+  .header {
+    display: none; /* Hide desktop header on mobile */
   }
 }

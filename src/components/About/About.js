@@ -8,7 +8,7 @@ function About() {
     <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="about-title">Jose Piereks is a <span className="accent">developer</span> & <span className="accent">designer</span> creating innovative solutions.</h2>
+          <h2 className="about-title">Jose Piereks is a <span className="accent">software engineer</span> & <span className="accent">designer</span> transforming how artists and venues connect.</h2>
         </div>
         
         <div className="divider"></div>
@@ -18,7 +18,7 @@ function About() {
           <div className="news-ticker">
             <div className="fade-left"></div>
             <div className="news-ticker-content">
-              <p>Currently seeking new opportunities to collaborate on exciting projects. — Building interactive web applications with React and modern JavaScript. — Exploring new design systems and UI frameworks. — Learning advanced animation techniques. — Currently seeking new opportunities to collaborate on exciting projects.</p>
+              <p>Currently developing Livenue, a revolutionary platform for artist-venue collaboration. — From event coordination to software engineering, bridging the gap between creativity and technology. — Building solutions that empower emerging artists and venue owners across NYC.</p>
             </div>
             <div className="fade-right"></div>
           </div>
@@ -31,10 +31,10 @@ function About() {
           <div className="content-col">
             <h3 className="section-label">WHAT I DO</h3>
             <div className="section-content">
-              <p className="highlight-item">Web Development</p>
+              <p className="highlight-item">Full-Stack Development</p>
+              <p className="highlight-item">Product Management</p>
               <p>UI/UX Design</p>
-              <p className="highlight-item">Responsive Interfaces</p>
-              <p>Interactive Applications</p>
+              <p className="highlight-item">Event Management</p>
             </div>
           </div>
           
@@ -42,16 +42,16 @@ function About() {
             <h3 className="section-label">EXPERIENCE</h3>
             <div className="section-content experience-content">
               <div className="experience-item">
-                <span className="experience-company highlight-item">Company A</span>
-                <span className="experience-year">2022</span>
+                <span className="experience-company highlight-item">Apple Inc.</span>
+                <span className="experience-year">2024</span>
               </div>
               <div className="experience-item">
-                <span className="experience-company">Company B</span>
-                <span className="experience-year">2021</span>
+                <span className="experience-company">SuperFanz</span>
+                <span className="experience-year">2023-24</span>
               </div>
               <div className="experience-item">
-                <span className="experience-company highlight-item">Company C</span>
-                <span className="experience-year">2020-21</span>
+                <span className="experience-company highlight-item">Moosic Discovery</span>
+                <span className="experience-year">2020-23</span>
               </div>
             </div>
           </div>
@@ -61,20 +61,20 @@ function About() {
         
         {/* OTHER THINGS I'M DOING section */}
         <div className="content-row">
-          <h3 className="section-label">OTHER THINGS I'M DOING</h3>
+          <h3 className="section-label">CURRENT FOCUS</h3>
           <div className="section-content">
             <div className="other-grid">
               <div className="other-item card">
-                <h4>Learning new technologies</h4>
-                <p>Exploring the latest frameworks and tools</p>
+                <h4>LiveNue (Stealth Mode) 🤫</h4>
+                <p>Developing a revolutionary platform that transforms how artists discover, book, and collaborate with venues</p>
               </div>
               <div className="other-item card featured">
-                <h4>Building side projects</h4>
-                <p>Creating innovative solutions in my spare time</p>
+                <h4>Software Engineering Transition</h4>
+                <p>Leveraging 4+ years of event coordination experience to build tech solutions for the music industry</p>
               </div>
               <div className="other-item card">
-                <h4>Contributing to open source</h4>
-                <p>Giving back to the community through code</p>
+                <h4>Industry Innovation</h4>
+                <p>Bridging the gap between creative talent and venue management through thoughtful technology</p>
               </div>
             </div>
           </div>

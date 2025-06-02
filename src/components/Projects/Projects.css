@@ -1,0 +1,214 @@
+/* src/components/Projects/Projects.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+.projects-section {
+  padding: 80px 20px 80px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-item {
+  margin-bottom: 40px;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-meta {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-id {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  grid-column: 1;
+}
+
+.project-category {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+  grid-column: 2;
+}
+
+.project-year {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+  grid-column: 3;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.project-image-col {
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.project-details-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom-line {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.divider-lines {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* The line pattern at the bottom */
+.divider-lines::before,
+.divider-lines::after {
+  content: '';
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .project-meta {
+    grid-template-columns: 50px 1fr 80px;
+  }
+  
+  .project-title {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+
+/* Add these styles to your Projects.css file */
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-link:hover {
+    transform: translateX(10px);
+  }
+  
+  .project-link:hover .project-title {
+    color: #2DD4BF;
+  }
+  
+  .project-link:hover .project-image {
+    transform: scale(1.02);
+  }
+  
+  .project-image {
+    transition: transform 0.5s ease;
+  }
+
+  /* Add these styles to your Projects.css file */
+
+.project-image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.03);
+    aspect-ratio: 16/9;
+    position: relative;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-image-container:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2DD4BF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-link:hover {
+    transform: translateX(5px);
+  }
+
+  /* Replace the previous CSS with this */
+@media (min-width: 1024px) {
+  .challenges-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  
+  /* Remove the grid-row spanning - let content flow naturally */
+  .project-challenge {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .challenges-container {
+    display: block;
+  }
+  
+  .project-challenge {
+    margin-bottom: 60px;
+  }
+}

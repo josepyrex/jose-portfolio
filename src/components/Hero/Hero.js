@@ -12,10 +12,10 @@ function Hero() {
   
   useEffect(() => {
     const typeLines = async () => {
-      const line1 = 'Jose Piereks';
-      const line2 = 'developer & designer';
-      const line3 = 'passionate about building';
-      const line4 = 'innovative solutions';
+      const line1 = 'hello! i\'m jose' ;
+      const line2 = 'software engineer & designer';
+      const line3 = 'building the future of';
+      const line4 = 'artist-venue connections';
       
       // Type line 1
       for (let i = 0; i <= line1.length; i++) {
