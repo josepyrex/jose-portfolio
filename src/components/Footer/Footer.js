@@ -5,12 +5,12 @@ import './Footer.css';
 function Footer() {
   const currentYear = new Date().getFullYear();
   const [textElements, setTextElements] = useState({
-    contact: "Let\'s Chat",
+    contact: "Let's Chat",
     email: "piereks@gmail.com",
     links: "Links",
     resume: "Resume",
     readcv: "Read.cv",
-    github: "github",
+    github: "Github",
     accolades: "Accolades",
     message: "This website was built using React & Node.js. Thanks for visiting <3",
     name: "piereks.com"
@@ -58,12 +58,12 @@ function Footer() {
   useEffect(() => {
     // Initial animations with staggered timing
     const originalTexts = {
-      contact: "Let\'s Chat",
+      contact: "Let's Chat",
       email: "piereks@gmail.com",
       links: "Links",
       resume: "Resume",
       readcv: "Read.cv",
-      github: "github",
+      github: "Github",
       accolades: "Accolades",
       message: "This website was built using React & Node.js. Thanks for visiting <3",
       name: "piereks.com"
@@ -75,7 +75,7 @@ function Footer() {
     setTimeout(() => scrambleText('links', originalTexts.links), 700);
     setTimeout(() => scrambleText('resume', originalTexts.resume), 900);
     setTimeout(() => scrambleText('readcv', originalTexts.readcv), 1100);
-    setTimeout(() => scrambleText('github', originalTexts.github), 1300);
+    setTimeout(() => scrambleText('Github', originalTexts.github), 1300);
     setTimeout(() => scrambleText('accolades', originalTexts.accolades), 1500);
     setTimeout(() => scrambleText('message', originalTexts.message), 1700);
     setTimeout(() => scrambleText('name', originalTexts.name), 1900);

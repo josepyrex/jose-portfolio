@@ -32,10 +32,11 @@ function Header() {
       {/* Desktop Header */}
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="20" r="19" stroke="white" strokeWidth="2"/>
             <path d="M15 20H25M20 15V25" stroke="white" strokeWidth="2"/>
-          </svg>
+          </svg> */}
+          <span className="logo-text">piereks</span>
         </div>
         
         <nav className="nav desktop-nav">

@@ -27,6 +27,15 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 12px; /* Space between symbol and text */
+}
+
+.logo-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
 }
 
 .nav-list {

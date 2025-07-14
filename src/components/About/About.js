@@ -8,7 +8,7 @@ function About() {
     <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="about-title">Jose Piereks is a <span className="accent">software engineer</span> & <span className="accent">designer</span> transforming how artists and venues connect.</h2>
+          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual product manager</span> <span className="accent"></span> specializing in AI-powered solutions, community growth, and transforming ideas into products.</h2>
         </div>
         
         <div className="divider"></div>
@@ -18,7 +18,7 @@ function About() {
           <div className="news-ticker">
             <div className="fade-left"></div>
             <div className="news-ticker-content">
-              <p>Currently developing Livenue, a revolutionary platform for artist-venue collaboration. — From event coordination to software engineering, bridging the gap between creativity and technology. — Building solutions that empower emerging artists and venue owners across NYC.</p>
+              <p>Currently building Livenue, a musician-venue booking platform for NYC. — Bridging the gap between creativity and technology. — Building solutions that empower emerging artists and venue owners across NYC. — Combining product management experience with music industry insights to solve real connection problems. —</p>
             </div>
             <div className="fade-right"></div>
           </div>
@@ -31,10 +31,10 @@ function About() {
           <div className="content-col">
             <h3 className="section-label">WHAT I DO</h3>
             <div className="section-content">
-              <p className="highlight-item">Full-Stack Development</p>
-              <p className="highlight-item">Product Management</p>
-              <p>UI/UX Design</p>
-              <p className="highlight-item">Event Management</p>
+              <p className="highlight-item">Product Strategy & Community Growth</p>
+              <p className="highlight-item">AI Implementation & Development</p>
+              <p>Brand Building & Marketing</p>
+              <p className="highlight-item">Technical Problem Solving</p>
             </div>
           </div>
           
@@ -42,12 +42,12 @@ function About() {
             <h3 className="section-label">EXPERIENCE</h3>
             <div className="section-content experience-content">
               <div className="experience-item">
-                <span className="experience-company highlight-item">Apple Inc.</span>
-                <span className="experience-year">2024</span>
+                <span className="experience-company">Apple Retail</span>
+                <span className="experience-year">2024-</span>
               </div>
               <div className="experience-item">
-                <span className="experience-company">SuperFanz</span>
-                <span className="experience-year">2023-24</span>
+                <span className="experience-company highlight-item">SuperFanz</span>
+                <span className="experience-year">2023-</span>
               </div>
               <div className="experience-item">
                 <span className="experience-company highlight-item">Moosic Discovery</span>
@@ -65,16 +65,16 @@ function About() {
           <div className="section-content">
             <div className="other-grid">
               <div className="other-item card">
-                <h4>LiveNue (Stealth Mode) 🤫</h4>
-                <p>Developing a revolutionary platform that transforms how artists discover, book, and collaborate with venues</p>
+                <h4>Livenue Platform</h4>
+                <p>Building MVP for NYC musician-venue marketplace, applying lessons from scaling emeswim and Moosic Discovery communities</p>
               </div>
               <div className="other-item card featured">
-                <h4>Software Engineering Transition</h4>
-                <p>Leveraging 4+ years of event coordination experience to build tech solutions for the music industry</p>
+                <h4>AI-Powered Development</h4>
+                <p>Successfully built and deployed <a href="https://ebookgen.app">ebookgen.app</a>, an AI-powered Ebook PDF generator using ChatGPT API and DALL-E, proving ability to implement complex technical solutions</p>
               </div>
               <div className="other-item card">
-                <h4>Industry Innovation</h4>
-                <p>Bridging the gap between creative talent and venue management through thoughtful technology</p>
+                <h4>Technical Growth</h4>
+                <p>Leveraging AI tools as coding mentors to bridge the gap between product vision and technical execution</p>
               </div>
             </div>
           </div>

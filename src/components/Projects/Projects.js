@@ -7,40 +7,49 @@ function Projects() {
   const projects = [
     {
       id: "01",
-      category: "INTERNSHIP",
-      year: "2022",
-      title: "Test",
-      image: '/images/instagram-logo.png',
-      description: "Celebrating Creators and their big milestones.",
-      slug: "superfanz"
+      category: "CASE STUDY",
+      year: "2025",
+      title: "ebookgen.app",
+      image: '/images/ebookgen/logo.png',
+      description: "Teaching AI to write books so you don't have to, one prompt at a time.",
+      slug: "ebookgen"
     },
     {
       id: "02",
-      category: "INTERNSHIP",
-      year: "2021",
-      title: "Test",
-      image: "/images/image.png",
-      description: "Giving Lyft drivers more control on the road.",
-      slug: "lyft"
+      category: "CASE STUDY",
+      year: "2023",
+      title: "Superfanz",
+      image: '/images/Superfanz/superfanzLogoBlackBorderTM.png',
+      description: "Startup collectable toy company that turned a simple LED fan into a luxury collectible that adults actually wanted to own.",
+      slug: "superfanz"
     },
     {
       id: "03",
-      category: "CASE STUDY",
-      year: "2023",
-      title: "Test",
-      image: "/images/image.png",
-      description: "The landscape of the digital designer is a jungle of panels and dropdown menus. Let's return home to the desk.",
-      slug: "figma-desk"
+      category: "Case Study",
+      year: "2024",
+      title: "emeswim",
+      image: "/images/emeswim/emeswim.png",
+      description: "From a concept to a featured swimwear brand at Miami Swim Week, all within a year.",
+      slug: "emeswim"
     },
     {
       id: "04",
-      category: "CASE STUDY",
-      year: "2020",
-      title: "Test",
-      image: "/images/image.png",
-      description: "Nurturing relationships between donors and beneficiaries with the storytelling power of design.",
-      slug: "duet"
-    }
+      category: "Moosic Discovery",
+      year: "2021",
+      title: "Moosic Discovery",
+      image: "/images/moosic/newMoosicLogoWithCow.png",
+      description: "The landscape of the digital designer is a jungle of panels and dropdown menus. Let's return home to the desk.",
+      slug: "moosic"
+    },
+    // {
+    //   id: "05",
+    //   category: "UNDER CONSTRUCTION",
+    //   year: "-",
+    //   title: "dulcet labs / livenue",
+    //   image: "/images/dulcet/Dulcet Logo dark.png",
+    //   description: "NYC musician-venue marketplace, social based musician app.",
+    //   slug: "dulcet"
+    // }
   ];
 
   return (
@@ -66,8 +75,8 @@ function Projects() {
                   </div>
                   
                   <div className="project-details-col">
-                    <h3 className="project-title">{project.title}</h3>
-                    <p className="project-description">{project.description}</p>
+                    <h3 className="main-project-title">{project.title}</h3>
+                    <p className=" main-project-description">{project.description}</p>
                   </div>
                 </div>
               </div>
