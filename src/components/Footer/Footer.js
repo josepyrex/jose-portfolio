@@ -6,7 +6,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
   const currentYear = new Date().getFullYear();
   const [textElements, setTextElements] = useState({
     contact: "Let's Chat",
-    email: "jose@piereks.com",
+    email: "piereks@gmail.com",
     links: "Links",
     resume: "Resume",
     music: "My Playlist ;)",
@@ -81,7 +81,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
     // Initial animations with staggered timing
     const originalTexts = {
       contact: "Let's Chat",
-      email: "jose@piereks.com",
+      email: "piereks@gmail.com",
       links: "Links",
       resume: "Resume",
       music: "My Playlist ;)",
@@ -142,13 +142,13 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
             >{textElements.contact}</h3>
             
             <a 
-              href="mailto:jose@piereks.com" 
+              href="mailto:piereks@gmail.com" 
               className="footer-email"
               onClick={(e) => {
                 e.preventDefault();
-                scrambleText('email', 'jose@piereks.com');
+                scrambleText('email', 'piereks@gmail.com');
                 setTimeout(() => {
-                  window.location.href = "mailto:jose@piereks.com";
+                  window.location.href = "mailto:piereks@gmail.com";
                 }, 1500);
               }}
             >{textElements.email}</a>

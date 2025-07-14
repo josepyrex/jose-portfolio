@@ -66,7 +66,7 @@ function Resume({ isOpen, onClose }) {
               <div className="resume-contact-grid">
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Email</span>
-                  <a href="mailto:jose@piereks.com" className="resume-contact-value">jose@piereks.com</a>
+                  <a href="mailto:piereks@gmail.com" className="resume-contact-value">piereks@gmail.com</a>
                 </div>
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Phone</span>
