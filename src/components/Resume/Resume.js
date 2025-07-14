@@ -66,19 +66,19 @@ function Resume({ isOpen, onClose }) {
               <div className="resume-contact-grid">
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Email</span>
-                  <a href="mailto:piereks@gmail.com" className="resume-contact-value">piereks@gmail.com</a>
+                  <span className="resume-contact-value">jose@piereks.com</span>
                 </div>
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Phone</span>
-                  <a href="tel:9548046810" className="resume-contact-value">(954)804-6810</a>
+                  <span className="resume-contact-value">(954) 804-6810</span>
                 </div>
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Location</span>
                   <span className="resume-contact-value">Brooklyn, NY</span>
                 </div>
                 <div className="resume-contact-item">
-                  <span className="resume-contact-label">LinkedIn</span>
-                  <a href="https://linkedin.com/in/josepyrex"className="resume-contact-value">/in/josepyrex</a>
+                  <span className="resume-contact-label">Portfolio</span>
+                  <span className="resume-contact-value">piereks.com</span>
                 </div>
               </div>
             </div>
@@ -99,9 +99,9 @@ function Resume({ isOpen, onClose }) {
                   </div>
                   <span className="resume-date">Jun 2024 - Present</span>
                 </div>
-               <p className="resume-description">
-                What I love about retail is the instant feedback loop, you know immediately if what you're doing works. Hit 99/100 satisfaction ratings while generating $1M+ in sales by treating every interaction like a conversation, not a transaction.
-              </p>
+                <p className="resume-description">
+                  What I love about retail is the immediate feedback—you know right away if what you're doing works. Maintained 99/100 satisfaction ratings while generating $1M+ in yearly sales by treating every customer interaction like a conversation, not a transaction.
+                </p>
               </div>
 
               <div className="resume-experience-item">
@@ -113,7 +113,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Mar 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                  Co-founded a swimwear brand that went from sketches to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service to that stressful-but-rewarding transition from Chinese to Colombian manufacturing. Learned that building a brand is half logistics and half storytelling.
+                  Co-founded an international swimwear brand that went from sketches to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service to that stressful-but-rewarding transition from Chinese to Colombian manufacturing.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">May 2022 - Jun 2024</span>
                 </div>
                 <p className="resume-description">
-                  Led the transformation of a toy company into a luxury collectible brand. The fun part? Coordinating with manufacturers in China while creating an effective website. Boosted team productivity 60% by implementing the right tools at the right time.
+                  Led the transformation concept of a toy company into a luxury collectible brand—including those bi-weekly video calls with manufacturers in China at ungodly hours. Built the company website and handled UX design while keeping design, marketing, and engineering teams aligned.
                 </p>
               </div>
 
@@ -139,8 +139,8 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Jan 2020 - May 2023</span>
                 </div>
                 <p className="resume-description">
-                Built a music discovery platform and assembled a team 10 volunteers. Grew to 10K monthly visitors by focusing on human-curated recommendations.
-              </p>
+                  Built a music discovery platform and assembled a team through one LinkedIn post that somehow got 80+ applications. Interviewed 20 candidates, hired 10 passionate volunteers, and grew to 10K monthly visitors by focusing on human-curated recommendations.
+                </p>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ function Resume({ isOpen, onClose }) {
         {/* Footer */}
         <div className="resume-footer">
           <div className="resume-footer-left">
-            <span>Last updated: July 2025</span>
+            <span>Last updated: January 2025</span>
           </div>
           <div className="resume-footer-right">
             <button className="resume-download-btn" onClick={handleDownload}>

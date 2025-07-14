@@ -41,10 +41,6 @@
   visibility: visible;
 }
 
-.resume-contact-value:hover {
-    color: #2DD4BF;
-}
-
 .resume-modal {
   width: 100%;
   max-width: 900px;
@@ -141,7 +137,6 @@
   padding: 0 40px 20px;
   position: relative;
   z-index: 1;
-  padding-top: 20px;
 }
 
 .resume-section {
@@ -378,19 +373,81 @@
   box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
 }
 
-/* Mobile Responsiveness */
+/* Animated Color Bar */
+.resume-color-bar {
+  display: flex;
+  width: 100%;
+  height: 6px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.resume-bar-segment {
+  flex: 1;
+  height: 100%;
+  opacity: 0;
+  animation: colorBarSlide 1.2s ease-out forwards;
+}
+
+.resume-bar-segment:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.resume-bar-segment:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.resume-bar-segment:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.resume-bar-segment:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.resume-bar-teal {
+  background: #2DD4BF;
+}
+
+.resume-bar-yellow {
+  background: #FFD60A;
+}
+
+.resume-bar-red {
+  background: #FF4365;
+}
+
+.resume-bar-purple {
+  background: #8A85FF;
+}
+
+@keyframes colorBarSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Mobile-specific improvements */
 @media (max-width: 768px) {
   .resume-overlay {
-    padding: 10px; /* Reduced padding for more space */
-    align-items: flex-start; /* Align to top instead of center */
-    padding-top: 40px; /* Push content down from status bar */
+    padding: 10px;
+    align-items: flex-start;
+    padding-top: 40px;
   }
 
   .resume-modal {
-    max-height: calc(100vh - 120px); /* Account for both status bar and Safari bottom bar */
+    max-height: calc(100vh - 120px);
     border-radius: 16px;
-    margin-bottom: 60px; /* Extra space for Safari bottom navigation */
+    margin-bottom: 60px;
   }
 
   .resume-header {
@@ -437,13 +494,13 @@
 
   /* Thicker color bar on mobile */
   .resume-color-bar {
-    height: 10px; /* Increased from 6px */
+    height: 10px;
     border-radius: 0 0 16px 16px;
   }
 
   /* Enhanced mobile animation with thicker bar */
   .resume-bar-segment {
-    animation-duration: 1.2s; /* Slightly slower for better visibility */
+    animation-duration: 1.2s;
   }
   
   .resume-bar-segment:nth-child(1) {
@@ -471,7 +528,7 @@
   }
   
   .resume-modal {
-    max-height: calc(100vh - 100px); /* More conservative for smaller phones */
+    max-height: calc(100vh - 100px);
     margin-bottom: 50px;
   }
   
@@ -491,43 +548,5 @@
   .resume-modal {
     max-height: calc(100vh - 60px);
     margin-bottom: 30px;
-  }
-}
-
-@keyframes colorBarSlide {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  50% {
-    opacity: 0.7;
-    transform: translateX(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Enhanced mobile animation */
-@media (max-width: 768px) {
-  .resume-bar-segment {
-    animation-duration: 1.6s; /* Longer duration */
-  }
-  
-  .resume-bar-segment:nth-child(1) {
-    animation-delay: 0.3s;
-  }
-  
-  .resume-bar-segment:nth-child(2) {
-    animation-delay: 0.6s;
-  }
-  
-  .resume-bar-segment:nth-child(3) {
-    animation-delay: 0.9s;
-  }
-  
-  .resume-bar-segment:nth-child(4) {
-    animation-delay: 1.2s;
   }
 }
