@@ -74,7 +74,7 @@
 
 .scroll-indicator {
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -82,7 +82,7 @@
     align-items: center;
     cursor: pointer;
     z-index: 2;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
   }
   
   .scroll-indicator:hover {
@@ -112,11 +112,11 @@
 
 @media (max-width: 768px) {
   .typewriter-line {
-    font-size: 28px; /* Reduced from 32px */
+    font-size: 26px; /* Reduced from 32px */
     line-height: 1.2;
   }
   .cursor {
-    height: 28px;
+    height: 26px;
   }
   
   .text-container {
@@ -131,11 +131,11 @@
 
 @media (max-width: 480px) {
   .typewriter-line {
-    font-size: 22px; /* Reduced from 24px */
+    font-size: 21px; /* Reduced from 24px */
     line-height: 1.1;
   }
   .cursor {
-    height: 22px;
+    height: 21px;
   }
   
   .text-container {
@@ -146,9 +146,9 @@
 /* Extra small phones */
 @media (max-width: 360px) {
   .typewriter-line {
-    font-size: 20px;
+    font-size: 19px;
   }
   .cursor {
-    height: 20px;
+    height: 19px;
   }
 }
