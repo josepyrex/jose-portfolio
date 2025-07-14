@@ -62,42 +62,41 @@
 .mobile-tab-nav {
   display: none;
   position: fixed;
-  top: 30px; /* Positioned at the top now */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  max-width: 275px;
-  background-color: rgba(28, 28, 28, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 30px;
-  padding: 10px 10px;
+  width: 70%; /* Reduced from 80% */
+  max-width: 240px; /* Reduced from 275px */
+  background-color: rgba(18, 18, 18, 0.85); /* Match your dark theme */
+  backdrop-filter: blur(12px);
+  border-radius: 24px; /* Slightly smaller radius */
+  padding: 8px 8px; /* Reduced from 10px */
   z-index: 100;
   justify-content: space-around;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(45, 212, 191, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Darker shadow */
+  border: 1px solid rgba(45, 212, 191, 0.2); /* More visible teal border */
 }
-
 .tab-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #999;
+  color: #AAAAAA; /* Match your text colors */
   text-decoration: none;
   transition: all 0.3s ease;
-  width: 40px;
-  height: 40px;
+  width: 36px; /* Reduced from 40px */
+  height: 36px; /* Reduced from 40px */
   border-radius: 50%;
 }
 
 .tab-item svg {
-  width: 22px;
-  height: 22px;
+  width: 20px; /* Reduced from 22px */
+  height: 20px;
   transition: all 0.3s ease;
 }
 
 .tab-item:hover, .tab-item.active {
   color: #2DD4BF;
-  background-color: rgba(45, 212, 191, 0.1);
+  background-color: rgba(45, 212, 191, 0.15); /* More subtle */
 }
 
 .tab-item:active {

@@ -190,26 +190,39 @@
   }
 
   /* Replace the previous CSS with this */
+
+@media (max-width: 768px) {
+  .main-project-title {
+    font-size: 28px; /* Reduced from 32px */
+    line-height: 1.1;
+  }
+  
+  .main-project-description {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
 @media (min-width: 1024px) {
   .challenges-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
-  }
+   }
   
   /* Remove the grid-row spanning - let content flow naturally */
   .project-challenge {
     margin-bottom: 40px;
+    }
   }
-}
 
 @media (max-width: 1023px) {
   .challenges-container {
     display: block;
-  }
+    }
   
   .project-challenge {
     margin-bottom: 60px;
+    }
   }
 }
