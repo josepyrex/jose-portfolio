@@ -14,8 +14,8 @@ function Hero() {
     const typeLines = async () => {
       const line1 = 'hello! i\'m jose francisco' ;
       const line2 = 'i help turn ideas into products';
-      const line3 = 'currently building AI tools';
-      const line4 = 'for creative communities';
+      const line3 = 'currently leveraging AI tools';
+      const line4 = 'to solve artists\' problems';
       
       // Type line 1
       for (let i = 0; i <= line1.length; i++) {
