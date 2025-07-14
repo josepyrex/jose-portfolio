@@ -11,7 +11,7 @@ function Projects() {
       year: "2025",
       title: "ebookgen.app",
       image: '/images/ebookgen/logo.png',
-      description: "I built this because writing books is hard, so why not let AI do the heavy lifting? One prompt, and you get a complete ebook with cover art.",
+      description: "I built this because writing books is hard, so why not let AI do all of the work? One prompt, and you get a complete ebook PDF with cover art and 35 pages.",
       slug: "ebookgen"
     },
     {
@@ -20,7 +20,7 @@ function Projects() {
       year: "2023",
       title: "Superfanz",
       image: '/images/Superfanz/superfanzLogoBlackBorderTM.png',
-      description: "Took a LED fan toy and restructured it's branding. Turns out good design and the right story can transform anything.",
+      description: "The challenge: prove that a $25 LED fan toy could become a $100+ luxury collectible that adults would actually want. Through extensive market research, product redesign, and brand strategy, I validated the concept and created a roadmap that could 4x the product value—even though we never made it to production.",
       slug: "superfanz"
     },
     {

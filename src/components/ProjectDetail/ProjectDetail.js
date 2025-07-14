@@ -134,11 +134,11 @@ function ProjectDetail() {
       role: 'Project Manager & Web Developer',
       tools: 'Webflow, Notion',
       credits: 'Freddy Tutiven, Mariajose Cerebros',
-      description: 'Here\'s the thing about SuperFanz, we had this LED fan toy originally targeted at kids, and somehow we needed to make adults want to collect it. Through some creative problem-solving (and a lot of late nights), we were reimagining what the product could be. We upgraded everything: premium materials, USB-C charging, custom LED animations, and a design language that borrowed more from luxury collectibles than toys. The result? A 300% price jump to $100+ and limited drops. Turns out when you treat your product like art, people start seeing it that way too.',
+      description: 'SuperFanz was one of those projects that teaches you as much about what doesn\'t get built as what does. We had this LED fan toy that was too expensive to make to be marketed to kids, and when I joined demanding a $20 price tag, I had a hypothesis, what if could we transform it into something adults would actually collect? What followed was months of deep market research, a complete product redesign, and a new brand strategy development. I proved the concept could work, validated a 4x price increase through user testing, created a luxury design language that resonated with collectors, and came up with an artist collaboration framework that generated real interest. Sometimes the most valuable projects are the ones that show you exactly what\'s possible, even when external factors keep them from reaching production.',
       challenges: [
     {
       id: 1,
-      title: 'Our product looked like a toy, but we needed adults to see it as a collectible worth displaying',
+      title: 'I needed to prove that a cheap toy could be repositioned as a luxury collectible worth 4x the original price',
       designSections: [
         {
           label: 'Old Design',
@@ -161,11 +161,11 @@ function ProjectDetail() {
           ]
         }
       ],
-      solution: 'Complete product redesign from the ground up. Swapped cheap plastics for premium materials, replaced the clunky battery compartment with sleek USB-C charging, and created customizable LED animations. The new design took inspiration from high-end collectibles like Superplastic figures, clean lines, premium feel, and attention to details that matter to collectors. This transformation didn\'t just justify the higher price point; it created a completely different emotional connection with the product.'
+      solution: 'Conducted extensive user research with potential collectors to understand what drives purchase decisions in the collectibles market. Redesigned the entire product concept with premium materials inspired by high-end collectibles like Superplastic figures, USB-C charging, and customizable LED animations. Through user testing and focus groups, I validated that the redesigned concept could command $100+ pricing (a 300% increase) from the original $25 something toy.'
     },
     {
       id: 2,
-      title: 'The website and branding felt like a kids\' playpen when we needed to communicate luxury and emotional connection',
+      title: 'The existing brand and website communicated "children\'s toy" when we needed to convey "luxury art piece"',
       designSections: [
         {
           label: 'Old Website',
@@ -202,11 +202,11 @@ function ProjectDetail() {
           ]
         }
       ],
-      solution: 'Completely rebuilt the digital experience using Apple\'s design principles as our north star. Clean layouts, premium photography, and storytelling that positioned SuperFanz as more than just a product. Every page was designed to feel like browsing a high-end gallery, not a toy store. Bounce rates dropped, time on site increased, and most importantly, people started talking about the brand differently.'
+      solution: 'Completely reimagined the brand identity and digital experience using Apple\'s design principles. Created premium mockups, refined messaging, and developed a content strategy that positioned SuperFanz as collectible art rather than toys. User testing showed dramatic improvements in brand perception and purchase intent, validating that the right presentation could completely transform how people saw the product.'
     },
     {
       id: 3,
-      title: 'Creating buzz for a completely repositioned product with zero existing collector audience felt impossible',
+      title: 'We needed to prove demand for a repositioned product in a market that didn\'t yet exist',
       designSections: [
         {
           label: 'Traditional Marketing Approach',
@@ -229,11 +229,11 @@ function ProjectDetail() {
           ]
         }
       ],
-      solution: 'Launched an artist collaboration program that turned our biggest challenge into our biggest advantage. We sent blank SuperFanz figures to designers and artists, who created one-of-a-kind painted pieces. Then we planned produced limited runs of the most popular designs. This did two things: it gave us authentic marketing through the artists\' fanbases, and it created the scarcity-driven demand that collectors love.'
+      solution: 'I developed and tested an artist collaboration strategy where designers would create custom painted SuperFanz pieces for limited production runs. Pre-launch interest surveys and social media testing showed strong engagement with the concept. While we didn\'t reach production, the validation process proved that authentic artist partnerships could create the scarcity-driven demand collectors seek.'
     },
     {
       id: 4,
-      title: 'Design, marketing, and engineering teams were working in silos, creating inconsistent product messaging and duplicated efforts.',
+      title: 'Cross-functional coordination between design, marketing, and engineering was creating bottlenecks and inconsistent vision',
       // designSections: [
       //   {
       //     label: 'Traditional Marketing Approach',
@@ -256,7 +256,7 @@ function ProjectDetail() {
       //     ]
       //   }
       // ],
-      solution: 'Implemented a proper project management system using Trello with full cross-team visibility. Established weekly all-hands meetings where everyone shared progress and blockers. Created a shared design system with a component library that everyone could access. The result? 60% improvement in team productivity and way fewer "wait, I thought someone else was handling that" moments.'
+      solution: 'I implemented integrated project management using Trello with full team visibility and established weekly alignment meetings. Created a shared design system and component library accessible to all teams. This process improvement increased team productivity by 60% and ensured everyone was building toward the same vision, even as the project evolved.'
     }
   ]
   },
