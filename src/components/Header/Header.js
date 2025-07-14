@@ -1,8 +1,11 @@
-// Updated Header.js with pill-shaped nav at the top
+// Updated src/components/Header/Header.js
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Header.css';
 
-function Header() {
+function Header({ isResumeOpen, setIsResumeOpen }) {
+  const location = useLocation();
+  const isProjectPage = location.pathname.startsWith('/project/'); // Receive props instead of managing state
   const [isScrolled, setIsScrolled] = useState(false);
   
   // Detect scroll for header styling
@@ -27,15 +30,17 @@ function Header() {
     }
   };
 
+  // Handle resume click - Updated to use props
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+    setIsResumeOpen(true);
+  };
+
   return (
     <>
       {/* Desktop Header */}
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="logo">
-          {/* <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20" cy="20" r="19" stroke="white" strokeWidth="2"/>
-            <path d="M15 20H25M20 15V25" stroke="white" strokeWidth="2"/>
-          </svg> */}
           <span className="logo-text">piereks</span>
         </div>
         
@@ -43,13 +48,15 @@ function Header() {
           <ul className="nav-list">
             <li className="nav-item"><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>about</a></li>
             <li className="nav-item"><a href="#projects" onClick={(e) => scrollToSection(e, 'projects')}>projects</a></li>
-            <li className="nav-item"><a href="#fun" onClick={(e) => scrollToSection(e, 'fun')}>fun</a></li>
-            <li className="nav-item"><a href="#resume" onClick={(e) => scrollToSection(e, 'resume')}>resume</a></li>
+            {/* <li className="nav-item"><a href="#fun" onClick={(e) => scrollToSection(e, 'fun')}>fun</a></li> */}
+            <li className="nav-item"><a href="#resume" onClick={handleResumeClick}>resume</a></li>
           </ul>
         </nav>
       </header>
       
-      {/* Mobile Tab Bar Navigation - pill shaped at the top */}
+      {/* Mobile Tab Bar Navigation */}
+
+      {!isProjectPage && (
       <nav className="mobile-tab-nav">
         <a href="#" onClick={(e) => scrollToSection(e, 'home')} className="tab-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,13 +76,13 @@ function Header() {
             <path d="M12 22.08V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </a>
-        <a href="#fun" onClick={(e) => scrollToSection(e, 'fun')} className="tab-item">
+        {/* <a href="#fun" onClick={(e) => scrollToSection(e, 'fun')} className="tab-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 13C10.4295 13.5741 10.9774 14.0492 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9404 15.7513 14.6898C16.4231 14.4392 17.0331 14.0471 17.54 13.54L21.12 9.95999C21.9457 9.12738 22.4141 8.0063 22.4141 6.83999C22.4141 5.67367 21.9457 4.55259 21.12 3.71999C20.2874 2.89427 19.1663 2.42578 18 2.42578C16.8337 2.42578 15.7126 2.89427 14.88 3.71999L14 4.59999" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             <path d="M14 11C13.5705 10.4259 13.0226 9.95082 12.3934 9.60706C11.7642 9.2633 11.0684 9.05886 10.3533 9.00769C9.63815 8.95652 8.92037 9.05961 8.24861 9.31017C7.57685 9.56073 6.96684 9.9529 6.45996 10.46L2.87996 14.04C2.05435 14.8726 1.58586 15.9937 1.58586 17.16C1.58586 18.3263 2.05435 19.4474 2.87996 20.28C3.71256 21.1056 4.83365 21.574 5.99996 21.574C7.16627 21.574 8.28736 21.1056 9.11996 20.28L9.99996 19.4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </a>
-        <a href="#resume" onClick={(e) => scrollToSection(e, 'resume')} className="tab-item">
+        </a> */}
+        <a href="#resume" onClick={handleResumeClick} className="tab-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             <path d="M14 2V8H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -85,6 +92,7 @@ function Header() {
           </svg>
         </a>
       </nav>
+      )}
     </>
   );
 }

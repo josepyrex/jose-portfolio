@@ -4,6 +4,7 @@
 
 .project-detail {
   background-color: #fff;
+  position: relative;
   color: #121212;
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
@@ -13,8 +14,8 @@
 /* Back Button */
 .back-button {
   position: fixed;
-  top: 100px;
-  left: 15px;
+  top: 70px;
+  left: 10px;
   background-color: rgba(10, 10, 10, 0.7);
   border: none;
   color: white;
@@ -43,6 +44,7 @@
   height: 70vh;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .project-hero-image {

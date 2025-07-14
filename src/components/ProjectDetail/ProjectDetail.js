@@ -1,6 +1,7 @@
 // src/components/ProjectDetail/ProjectDetail.js
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import ProjectHeader from '../ProjectHeader/ProjectHeader';
 import Footer from '../Footer/Footer'; // Import the main Footer component
 import './ProjectDetail.css';
 
@@ -464,20 +465,11 @@ function ProjectDetail() {
     description: "This project could not be found. Please return to the projects page."
   };
 
-  // Handle back button click
-  const handleBack = () => {
-    navigate('/');
-  };
-
   return (
     <div className="project-detail">
-      <button className="back-button" onClick={handleBack}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-        <span>Back to Projects</span>
-      </button>
       
+      <ProjectHeader projectTitle={project.title} />
+
       <div className="project-hero">
         <img src={project.heroImage} alt={project.title} className="project-hero-image" />
       </div>

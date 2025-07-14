@@ -1,0 +1,482 @@
+/* src/components/Resume/Resume.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+.resume-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  font-family: 'Inter', sans-serif;
+  padding: 40px 20px;
+}
+
+.resume-overlay-open {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  visibility: visible;
+}
+
+.resume-contact-value:hover {
+    color: #2DD4BF;
+}
+
+.resume-modal {
+  width: 100%;
+  max-width: 900px;
+  background: #121212;
+  border-radius: 20px;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-modal::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.05) 0%, rgba(45, 212, 191, 0) 70%);
+  z-index: 0;
+}
+
+.resume-modal::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.03) 0%, rgba(45, 212, 191, 0) 70%);
+  z-index: 0;
+}
+
+.resume-modal-open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.resume-header {
+  padding: 30px 40px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #121212;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.resume-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.resume-subtitle {
+  color: #AAAAAA;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.resume-close {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  margin-top: -8px;
+}
+
+.resume-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.resume-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 40px 20px;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+.resume-section {
+  margin-bottom: 40px;
+}
+
+.resume-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resume-section-header h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.resume-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.resume-dot-teal {
+  background: #2DD4BF;
+}
+
+.resume-dot-yellow {
+  background: #FFD60A;
+}
+
+.resume-dot-purple {
+  background: #8A85FF;
+}
+
+.resume-dot-red {
+  background: #FF4365;
+}
+
+.resume-section-content {
+  margin-left: 20px;
+}
+
+.resume-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.resume-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resume-contact-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resume-contact-value {
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.resume-experience-item {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume-experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.resume-job-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.resume-company {
+  color: #2DD4BF;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.resume-date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.resume-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resume-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.resume-skill-category h5 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.resume-skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-skill-category li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 16px;
+  transition: color 0.3s ease;
+}
+
+.resume-skill-category li:hover {
+  color: #ffffff;
+}
+
+.resume-skill-category li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  background: #2DD4BF;
+  border-radius: 50%;
+}
+
+.resume-project-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.resume-project-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.resume-project-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-project-item h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.resume-project-item p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resume-footer {
+  padding: 20px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.resume-footer-left span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.resume-download-btn {
+  background: #2DD4BF;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.resume-download-btn:hover {
+  background: #26C7B5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .resume-overlay {
+    padding: 20px;
+  }
+
+  .resume-modal {
+    max-height: 90vh;
+    border-radius: 16px;
+  }
+
+  .resume-header {
+    padding: 24px 24px 16px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .resume-title {
+    font-size: 26px;
+  }
+
+  .resume-subtitle {
+    font-size: 16px;
+  }
+
+  .resume-content {
+    padding: 0 24px 16px;
+  }
+
+  .resume-footer {
+    padding: 16px 24px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .resume-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .resume-section {
+    margin-bottom: 32px;
+  }
+
+  .resume-color-bar {
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+/* Animated Color Bar */
+.resume-color-bar {
+  display: flex;
+  width: 100%;
+  height: 6px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.resume-bar-segment {
+  flex: 1;
+  height: 100%;
+  opacity: 0;
+  animation: colorBarSlide 1.2s ease-out forwards;
+}
+
+.resume-bar-segment:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.resume-bar-segment:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.resume-bar-segment:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.resume-bar-segment:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.resume-bar-teal {
+  background: #2DD4BF;
+}
+
+.resume-bar-yellow {
+  background: #FFD60A;
+}
+
+.resume-bar-red {
+  background: #FF4365;
+}
+
+.resume-bar-purple {
+  background: #8A85FF;
+}
+
+@keyframes colorBarSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

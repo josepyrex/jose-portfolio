@@ -1,17 +1,17 @@
-// src/components/Footer/Footer.js
+// Updated src/components/Footer/Footer.js
 import React, { useState, useEffect, useRef } from 'react';
 import './Footer.css';
 
-function Footer() {
+function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
   const currentYear = new Date().getFullYear();
   const [textElements, setTextElements] = useState({
     contact: "Let's Chat",
-    email: "piereks@gmail.com",
+    email: "jose@piereks.com",
     links: "Links",
     resume: "Resume",
-    readcv: "Read.cv",
+    music: "My Playlist ;)",
     github: "Github",
-    accolades: "Accolades",
+    instagram: "Instagram",
     message: "This website was built using React & Node.js. Thanks for visiting <3",
     name: "piereks.com"
   });
@@ -55,16 +55,25 @@ function Footer() {
     }, 70);
   };
   
+  // Handle resume click - Updated to open popup
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+    scrambleText('resume', 'Resume');
+    setTimeout(() => {
+      setIsResumeOpen(true); // Open popup instead of PDF
+    }, 1500);
+  };
+  
   useEffect(() => {
     // Initial animations with staggered timing
     const originalTexts = {
       contact: "Let's Chat",
-      email: "piereks@gmail.com",
+      email: "jose@piereks.com",
       links: "Links",
       resume: "Resume",
-      readcv: "Read.cv",
+      music: "My Playlist ;)",
       github: "Github",
-      accolades: "Accolades",
+      instagram: "Instagram",
       message: "This website was built using React & Node.js. Thanks for visiting <3",
       name: "piereks.com"
     };
@@ -74,9 +83,9 @@ function Footer() {
     setTimeout(() => scrambleText('email', originalTexts.email), 500);
     setTimeout(() => scrambleText('links', originalTexts.links), 700);
     setTimeout(() => scrambleText('resume', originalTexts.resume), 900);
-    setTimeout(() => scrambleText('readcv', originalTexts.readcv), 1100);
+    setTimeout(() => scrambleText('music', originalTexts.music), 1100);
     setTimeout(() => scrambleText('Github', originalTexts.github), 1300);
-    setTimeout(() => scrambleText('accolades', originalTexts.accolades), 1500);
+    setTimeout(() => scrambleText('instagram', originalTexts.instagram), 1500);
     setTimeout(() => scrambleText('message', originalTexts.message), 1700);
     setTimeout(() => scrambleText('name', originalTexts.name), 1900);
     
@@ -120,13 +129,13 @@ function Footer() {
             >{textElements.contact}</h3>
             
             <a 
-              href="mailto:piereks@gmail.com" 
+              href="mailto:jose@piereks.com" 
               className="footer-email"
               onClick={(e) => {
                 e.preventDefault();
-                scrambleText('email', 'piereks@gmail.com');
+                scrambleText('email', 'jose@piereks.com');
                 setTimeout(() => {
-                  window.location.href = "mailto:piereks@gmail.com";
+                  window.location.href = "mailto:jose@piereks.com";
                 }, 1500);
               }}
             >{textElements.email}</a>
@@ -141,37 +150,28 @@ function Footer() {
             <ul>
               <li>
                 <a 
-                  href="/resume.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrambleText('resume', 'Resume');
-                    setTimeout(() => {
-                      window.open('/resume.pdf', '_blank');
-                    }, 1500);
-                  }}
+                  href="#resume" 
+                  onClick={handleResumeClick} // Updated to use new handler
                 >
                   <span className="link-circle teal"></span>
                   <span className="link-text">{textElements.resume}</span>
-                  <span className="arrow">↗</span>
                 </a>
               </li>
               <li>
                 <a 
-                  href="/cv.pdf" 
+                  href="https://open.spotify.com/playlist/3YGnyTVFnA9YnjFltHmtFD?si=b631bed2abe9494a" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrambleText('readcv', 'Read.cv');
+                    scrambleText('music', 'My Playlist ;)');
                     setTimeout(() => {
-                      window.open('/cv.pdf', '_blank');
+                      window.open('https://open.spotify.com/playlist/3YGnyTVFnA9YnjFltHmtFD?si=b631bed2abe9494a', '_blank');
                     }, 1500);
                   }}
                 >
                   <span className="link-circle yellow"></span>
-                  <span className="link-text">{textElements.readcv}</span>
+                  <span className="link-text">{textElements.music}</span>
                   <span className="arrow">↗</span>
                 </a>
               </li>
@@ -195,17 +195,20 @@ function Footer() {
               </li>
               <li>
                 <a 
-                  href="#accolades"
+                  href="https://instagram.com/josepyrex"
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrambleText('accolades', 'Accolades');
+                    scrambleText('instagram', 'Instagram');
                     setTimeout(() => {
-                      document.getElementById('accolades').scrollIntoView({ behavior: 'smooth' });
+                      window.open('https://instagram.com/josepyrex', '_blank');
                     }, 1500);
                   }}
                 >
                   <span className="link-circle red"></span>
-                  <span className="link-text">{textElements.accolades}</span>
+                  <span className="link-text">{textElements.instagram}</span>
+                  <span className="arrow">↗</span>
                 </a>
               </li>
             </ul>
