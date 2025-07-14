@@ -128,6 +128,7 @@
 }
 
 /* Mobile Header */
+/* Mobile Header */
 .project-header-mobile {
   display: none;
   align-items: center;
@@ -140,7 +141,7 @@
 
 .project-header-mobile.minimized {
   padding: 8px 20px;
-  background-color: rgba(18, 18, 18, 0.7);
+  background-color: rgba(18, 18, 18, 0.85); /* Consistent background */
   opacity: 0.8;
   transform: scale(0.9);
 }
@@ -150,21 +151,10 @@
   transform: scale(0.95);
 }
 
-/* Improve mobile button sizing when minimized */
-.project-header-mobile.minimized .mobile-back-btn,
-.project-header-mobile.minimized .mobile-home-btn {
-  width: 32px;
-  height: 32px;
-  padding: 6px;
-}
-
-.project-header-mobile.minimized .mobile-logo-text {
-  font-size: 16px;
-}
-
+/* All mobile buttons have consistent styling */
 .mobile-back-btn,
 .mobile-home-btn {
-  background: none;
+  background: transparent;
   border: none;
   color: white;
   cursor: pointer;
@@ -182,9 +172,25 @@
   color: #2DD4BF;
 }
 
+/* Ensure minimized buttons maintain same background */
+.project-header-mobile.minimized .mobile-back-btn,
+.project-header-mobile.minimized .mobile-home-btn {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  background: transparent; /* Same as parent */
+}
+
+.project-header-mobile.minimized .mobile-back-btn:hover,
+.project-header-mobile.minimized .mobile-home-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #2DD4BF;
+}
+
 .mobile-brand {
   cursor: pointer;
   transition: all 0.3s ease;
+  background: transparent; /* Consistent background */
 }
 
 .mobile-logo-text {
@@ -194,6 +200,11 @@
   color: white;
   letter-spacing: -0.02em;
   transition: color 0.3s ease;
+}
+
+.project-header-mobile.minimized .mobile-logo-text {
+  font-size: 16px;
+  color: white; /* Consistent color */
 }
 
 .mobile-brand:hover .mobile-logo-text {
@@ -238,26 +249,4 @@
   .mobile-logo-text {
     font-size: 18px;
   }
-}
-
-/* Fix color consistency when minimized */
-.project-header-mobile.minimized .mobile-back-btn,
-.project-header-mobile.minimized .mobile-home-btn {
-  background: transparent; /* Remove any background color differences */
-  color: white; /* Ensure consistent text color */
-}
-
-.project-header-mobile.minimized .mobile-back-btn:hover,
-.project-header-mobile.minimized .mobile-home-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #2DD4BF;
-}
-
-/* Ensure the mobile brand also maintains consistency */
-.project-header-mobile.minimized .mobile-brand {
-  background: transparent;
-}
-
-.project-header-mobile.minimized .mobile-logo-text {
-  color: white;
 }

@@ -22,17 +22,12 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
   const scrambleText = (key, originalText) => {
   if (animatingElements[key]) return;
   
-  // Temporarily disable scroll restoration on mobile during animation
-  const isMobile = window.innerWidth <= 768;
-  if (isMobile) {
-    document.body.style.overflow = 'hidden';
-  }
-  
   setAnimatingElements(prev => ({ ...prev, [key]: true }));
   
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,./<>?';
   let iterations = 0;
-  const maxIterations = isMobile ? 10 : 15; // Shorter animation on mobile
+  const isMobile = window.innerWidth <= 768;
+  const maxIterations = isMobile ? 12 : 15; // Slightly slower on mobile
   
   const interval = setInterval(() => {
     if (iterations < maxIterations) {
@@ -44,7 +39,19 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
         if (characterRevealThreshold < progress) {
           scrambled += originalText[i];
         } else {
-          scrambled += chars[Math.floor(Math.random() * chars.length)];
+          // Always use same character type to maintain width
+          const originalChar = originalText[i];
+          if (originalChar === ' ') {
+            scrambled += ' '; // Keep spaces as spaces
+          } else if (originalChar.match(/[A-Z]/)) {
+            scrambled += chars[Math.floor(Math.random() * 26) + 26]; // Uppercase letters
+          } else if (originalChar.match(/[a-z]/)) {
+            scrambled += chars[Math.floor(Math.random() * 26)]; // Lowercase letters
+          } else if (originalChar.match(/[0-9]/)) {
+            scrambled += chars[Math.floor(Math.random() * 10) + 52]; // Numbers
+          } else {
+            scrambled += originalChar; // Keep special characters as-is
+          }
         }
       }
       
@@ -54,17 +61,12 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
       setTextElements(prev => ({ ...prev, [key]: originalText }));
       clearInterval(interval);
       
-      // Re-enable scroll
-      if (isMobile) {
-        document.body.style.overflow = 'unset';
-      }
-      
       setTimeout(() => {
         setAnimatingElements(prev => ({ ...prev, [key]: false }));
-      }, 2000);
-    }
-  }, isMobile ? 50 : 70); // Faster animation on mobile
-};
+      }, 1000);
+     }
+    }, isMobile ? 60 : 70); // Slower on mobile: 60ms vs 70ms
+  };
   
   // Handle resume click - Updated to open popup
   const handleResumeClick = (e) => {

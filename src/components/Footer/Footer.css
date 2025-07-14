@@ -196,11 +196,11 @@
 @media (max-width: 768px) {
   .footer-main {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 30px;
   }
   
   .footer-container {
-    gap: 50px;
+    gap: 30px;
   }
   
   .footer-logo h2 {
@@ -209,5 +209,23 @@
   
   .footer-copyright p {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links a .link-text {
+    white-space: normal; /* Allow wrapping on mobile if needed */
+    overflow: visible;
+  }
+  
+  .animation-text {
+    white-space: normal; /* Allow wrapping for long text */
+    overflow: visible;
+    line-height: 1.5; /* Consistent line height */
+  }
+  
+  /* Prevent footer jumping during animations */
+  .footer-container {
+    min-height: 400px; /* Reserve space to prevent jumping */
   }
 }
