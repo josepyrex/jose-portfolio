@@ -20,40 +20,51 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
   const footerRef = useRef(null);
   
   const scrambleText = (key, originalText) => {
-    if (animatingElements[key]) return;
-    
-    setAnimatingElements(prev => ({ ...prev, [key]: true }));
-    
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,./<>?';
-    let iterations = 0;
-    const maxIterations = 15;
-    
-    const interval = setInterval(() => {
-      if (iterations < maxIterations) {
-        // Create scrambled text with more symbols at the beginning, gradually revealing real text
-        let scrambled = '';
-        for (let i = 0; i < originalText.length; i++) {
-          const progress = iterations / maxIterations;
-          const characterRevealThreshold = i / originalText.length;
-          
-          if (characterRevealThreshold < progress) {
-            scrambled += originalText[i];
-          } else {
-            scrambled += chars[Math.floor(Math.random() * chars.length)];
-          }
-        }
+  if (animatingElements[key]) return;
+  
+  // Temporarily disable scroll restoration on mobile during animation
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    document.body.style.overflow = 'hidden';
+  }
+  
+  setAnimatingElements(prev => ({ ...prev, [key]: true }));
+  
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,./<>?';
+  let iterations = 0;
+  const maxIterations = isMobile ? 10 : 15; // Shorter animation on mobile
+  
+  const interval = setInterval(() => {
+    if (iterations < maxIterations) {
+      let scrambled = '';
+      for (let i = 0; i < originalText.length; i++) {
+        const progress = iterations / maxIterations;
+        const characterRevealThreshold = i / originalText.length;
         
-        setTextElements(prev => ({ ...prev, [key]: scrambled }));
-        iterations++;
-      } else {
-        setTextElements(prev => ({ ...prev, [key]: originalText }));
-        clearInterval(interval);
-        setTimeout(() => {
-          setAnimatingElements(prev => ({ ...prev, [key]: false }));
-        }, 2000);
+        if (characterRevealThreshold < progress) {
+          scrambled += originalText[i];
+        } else {
+          scrambled += chars[Math.floor(Math.random() * chars.length)];
+        }
       }
-    }, 70);
-  };
+      
+      setTextElements(prev => ({ ...prev, [key]: scrambled }));
+      iterations++;
+    } else {
+      setTextElements(prev => ({ ...prev, [key]: originalText }));
+      clearInterval(interval);
+      
+      // Re-enable scroll
+      if (isMobile) {
+        document.body.style.overflow = 'unset';
+      }
+      
+      setTimeout(() => {
+        setAnimatingElements(prev => ({ ...prev, [key]: false }));
+      }, 2000);
+    }
+  }, isMobile ? 50 : 70); // Faster animation on mobile
+};
   
   // Handle resume click - Updated to open popup
   const handleResumeClick = (e) => {

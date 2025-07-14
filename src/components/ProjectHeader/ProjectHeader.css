@@ -134,6 +134,32 @@
   justify-content: space-between;
   padding: 16px 20px;
   font-family: 'Inter', sans-serif;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.project-header-mobile.minimized {
+  padding: 8px 20px;
+  background-color: rgba(18, 18, 18, 0.7);
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+
+.project-header-mobile.minimized:hover {
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+/* Improve mobile button sizing when minimized */
+.project-header-mobile.minimized .mobile-back-btn,
+.project-header-mobile.minimized .mobile-home-btn {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+
+.project-header-mobile.minimized .mobile-logo-text {
+  font-size: 16px;
 }
 
 .mobile-back-btn,
@@ -212,4 +238,26 @@
   .mobile-logo-text {
     font-size: 18px;
   }
+}
+
+/* Fix color consistency when minimized */
+.project-header-mobile.minimized .mobile-back-btn,
+.project-header-mobile.minimized .mobile-home-btn {
+  background: transparent; /* Remove any background color differences */
+  color: white; /* Ensure consistent text color */
+}
+
+.project-header-mobile.minimized .mobile-back-btn:hover,
+.project-header-mobile.minimized .mobile-home-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #2DD4BF;
+}
+
+/* Ensure the mobile brand also maintains consistency */
+.project-header-mobile.minimized .mobile-brand {
+  background: transparent;
+}
+
+.project-header-mobile.minimized .mobile-logo-text {
+  color: white;
 }

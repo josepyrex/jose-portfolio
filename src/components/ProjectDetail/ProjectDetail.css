@@ -384,6 +384,40 @@
   }
 }
 
+@media (max-width: 768px) {
+  .live-banner,
+  .unfunded-banner,
+  .prototype-banner,
+  .concept-banner {
+    padding: 16px 20px; /* Reduced from 20px 40px */
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .banner-indicator {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  
+  .banner-text {
+    font-size: 14px;
+    line-height: 1.4;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .arrow-icon {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
 /* Add to your ProjectDetail.css */
 
 /* Image grid layouts */

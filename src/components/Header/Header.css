@@ -116,3 +116,28 @@
     display: none; /* Hide desktop header on mobile */
   }
 }
+
+.mobile-tab-nav.minimized {
+  width: 60%;
+  max-width: 200px;
+  padding: 6px 6px;
+  background-color: rgba(18, 18, 18, 0.7);
+  opacity: 0.8;
+  transform: translateX(-50%) scale(0.85);
+  cursor: pointer;
+}
+
+.mobile-tab-nav.minimized:hover {
+  opacity: 1;
+  transform: translateX(-50%) scale(0.9);
+}
+
+.mobile-tab-nav.minimized .tab-item {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-tab-nav.minimized .tab-item svg {
+  width: 16px;
+  height: 16px;
+}
