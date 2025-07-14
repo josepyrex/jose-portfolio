@@ -3,6 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
+/* Safe area support for iPhones with notches */
+@supports (padding: max(0px)) {
+  @media (max-width: 768px) {
+    .resume-overlay {
+      padding-top: max(40px, env(safe-area-inset-top));
+      padding-bottom: max(60px, env(safe-area-inset-bottom));
+    }
+    
+    .resume-modal {
+      margin-bottom: max(60px, calc(env(safe-area-inset-bottom) + 20px));
+    }
+  }
+}
+
 .resume-overlay {
   position: fixed;
   top: 0;
@@ -365,14 +379,18 @@
 }
 
 /* Mobile Responsiveness */
+/* Mobile-specific improvements */
 @media (max-width: 768px) {
   .resume-overlay {
-    padding: 20px;
+    padding: 10px; /* Reduced padding for more space */
+    align-items: flex-start; /* Align to top instead of center */
+    padding-top: 40px; /* Push content down from status bar */
   }
 
   .resume-modal {
-    max-height: 90vh;
+    max-height: calc(100vh - 120px); /* Account for both status bar and Safari bottom bar */
     border-radius: 16px;
+    margin-bottom: 60px; /* Extra space for Safari bottom navigation */
   }
 
   .resume-header {
@@ -389,7 +407,7 @@
   }
 
   .resume-content {
-    padding: 20px 24px 16px;
+    padding: 0 24px 16px;
   }
 
   .resume-footer {
@@ -417,57 +435,63 @@
     margin-bottom: 32px;
   }
 
+  /* Thicker color bar on mobile */
   .resume-color-bar {
+    height: 10px; /* Increased from 6px */
     border-radius: 0 0 16px 16px;
+  }
+
+  /* Enhanced mobile animation with thicker bar */
+  .resume-bar-segment {
+    animation-duration: 1.2s; /* Slightly slower for better visibility */
+  }
+  
+  .resume-bar-segment:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .resume-bar-segment:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .resume-bar-segment:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .resume-bar-segment:nth-child(4) {
+    animation-delay: 0.8s;
   }
 }
 
-/* Animated Color Bar */
-.resume-color-bar {
-  display: flex;
-  width: 100%;
-  height: 6px;
-  border-radius: 0 0 20px 20px;
-  overflow: hidden;
+/* iPhone-specific adjustments */
+@media (max-width: 480px) {
+  .resume-overlay {
+    padding: 8px;
+    padding-top: 30px;
+  }
+  
+  .resume-modal {
+    max-height: calc(100vh - 100px); /* More conservative for smaller phones */
+    margin-bottom: 50px;
+  }
+  
+  /* Even thicker bar on small phones */
+  .resume-color-bar {
+    height: 12px;
+  }
 }
 
-.resume-bar-segment {
-  flex: 1;
-  height: 100%;
-  opacity: 0;
-  animation: colorBarSlide 1.2s ease-out forwards;
-}
-
-.resume-bar-segment:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.resume-bar-segment:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.resume-bar-segment:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.resume-bar-segment:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.resume-bar-teal {
-  background: #2DD4BF;
-}
-
-.resume-bar-yellow {
-  background: #FFD60A;
-}
-
-.resume-bar-red {
-  background: #FF4365;
-}
-
-.resume-bar-purple {
-  background: #8A85FF;
+/* Landscape mode adjustments for phones */
+@media (max-width: 768px) and (orientation: landscape) {
+  .resume-overlay {
+    padding: 5px;
+    padding-top: 20px;
+  }
+  
+  .resume-modal {
+    max-height: calc(100vh - 60px);
+    margin-bottom: 30px;
+  }
 }
 
 @keyframes colorBarSlide {

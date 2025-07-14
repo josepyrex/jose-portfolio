@@ -11,7 +11,7 @@ function Projects() {
       year: "2025",
       title: "ebookgen.app",
       image: '/images/ebookgen/logo.png',
-      description: "Teaching AI to write books so you don't have to, one prompt at a time.",
+      description: "I built this because writing books is hard, so why not let AI do the heavy lifting? One prompt, and you get a complete ebook with cover art.",
       slug: "ebookgen"
     },
     {
@@ -20,7 +20,7 @@ function Projects() {
       year: "2023",
       title: "Superfanz",
       image: '/images/Superfanz/superfanzLogoBlackBorderTM.png',
-      description: "Startup collectable toy company that turned a simple LED fan into a luxury collectible that adults actually wanted to own.",
+      description: "Took a LED fan toy and restructured it's branding. Turns out good design and the right story can transform anything.",
       slug: "superfanz"
     },
     {
@@ -29,7 +29,7 @@ function Projects() {
       year: "2024",
       title: "emeswim",
       image: "/images/emeswim/emeswim.png",
-      description: "From a concept to a featured swimwear brand at Miami Swim Week, all within a year.",
+      description: "Helped a friend turn her swimwear sketches into a real brand that ended up at Miami Swim Week. 'Cause sometimes the best projects start with 'hey, want to help me with something?'",
       slug: "emeswim"
     },
     {
@@ -38,7 +38,7 @@ function Projects() {
       year: "2021",
       title: "Moosic Discovery",
       image: "/images/moosic/newMoosicLogoWithCow.png",
-      description: "The landscape of the digital designer is a jungle of panels and dropdown menus. Let's return home to the desk.",
+      description: "Started as a pandemic side project to help people discover new music. Ended up teaching me more about community building than any MBA could.",
       slug: "moosic"
     },
     // {

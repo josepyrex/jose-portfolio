@@ -12,7 +12,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
     music: "My Playlist ;)",
     github: "Github",
     instagram: "Instagram",
-    message: "This website was built using React & Node.js. Thanks for visiting <3",
+    message: "Built this site with React and way too much CSS. Hosted on Vercel. Thanks for stopping by! <3",
     name: "piereks.com"
   });
   
@@ -87,7 +87,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
       music: "My Playlist ;)",
       github: "Github",
       instagram: "Instagram",
-      message: "This website was built using React & Node.js. Thanks for visiting <3",
+      message: "Built this site with React and way too much CSS. Hosted on Vercel. Thanks for stopping by! <3",
       name: "piereks.com"
     };
     
@@ -230,7 +230,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
         
         <div 
           className="footer-animation" 
-          onClick={() => scrambleText('message', 'This website was built using React & Node.js. Thanks for visiting <3')}
+          onClick={() => scrambleText('message', 'Built this site with React and way too much CSS. Hosted on Vercel. Thanks for stopping by! <3')}
         >
           <p className="animation-text">{textElements.message}</p>
         </div>

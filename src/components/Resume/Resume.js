@@ -99,9 +99,9 @@ function Resume({ isOpen, onClose }) {
                   </div>
                   <span className="resume-date">Jun 2024 - Present</span>
                 </div>
-                <p className="resume-description">
-                  Deliver comprehensive technical support with 99/100 satisfaction rating. Generated $1M in yearly sales through consultative customer interactions and technical demonstrations.
-                </p>
+               <p className="resume-description">
+                What I love about retail is the instant feedback loop, you know immediately if what you're doing works. Hit 99/100 satisfaction ratings while generating $1M+ in sales by treating every interaction like a conversation, not a transaction.
+              </p>
               </div>
 
               <div className="resume-experience-item">
@@ -113,7 +113,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Mar 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                  Co-founded international swimwear e-commerce business featured at Miami Swim Week. Coordinated manufacturing transition from China to Colombia, improving quality standards and ethical sourcing.
+                  Co-founded a swimwear brand that went from sketches to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service to that stressful-but-rewarding transition from Chinese to Colombian manufacturing. Learned that building a brand is half logistics and half storytelling.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">May 2022 - Jun 2024</span>
                 </div>
                 <p className="resume-description">
-                  Built company website and handled UX design while coordinating between design, marketing, and engineering teams. Implemented collaboration tools that improved team productivity by 60%.
+                  Led the transformation of a toy company into a luxury collectible brand. The fun part? Coordinating with manufacturers in China while creating an effective website. Boosted team productivity 60% by implementing the right tools at the right time.
                 </p>
               </div>
 
@@ -139,8 +139,8 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Jan 2020 - May 2023</span>
                 </div>
                 <p className="resume-description">
-                  Built music discovery website and recruited team through LinkedIn job posting that received 80+ applications. Launched platform that reached 10K visitors in first month.
-                </p>
+                Built a music discovery platform and assembled a team 10 volunteers. Grew to 10K monthly visitors by focusing on human-curated recommendations.
+              </p>
               </div>
             </div>
           </div>

@@ -134,11 +134,11 @@ function ProjectDetail() {
       role: 'Project Manager & Web Developer',
       tools: 'Webflow, Notion',
       credits: 'Freddy Tutiven, Mariajose Cerebros',
-      description: 'Superfanz began as a basic LED fan toy targeting children. Through strategic product repositioning, premium material upgrades, and innovative artist collaborations, we transformed it into a luxury collectible brand targeting adult art collectors. This pivot resulted in a 300% price increase from $25 to $100+ and established a sustainable limited-edition drop model.',
+      description: 'Here\'s the thing about SuperFanz, we had this LED fan toy originally targeted at kids, and somehow we needed to make adults want to collect it. Through some creative problem-solving (and a lot of late nights), we were reimagining what the product could be. We upgraded everything: premium materials, USB-C charging, custom LED animations, and a design language that borrowed more from luxury collectibles than toys. The result? A 300% price jump to $100+ and limited drops. Turns out when you treat your product like art, people start seeing it that way too.',
       challenges: [
     {
       id: 1,
-      title: 'The product looked cheap and toy-like, failing to attract our target demographic of adult collectors',
+      title: 'Our product looked like a toy, but we needed adults to see it as a collectible worth displaying',
       designSections: [
         {
           label: 'Old Design',
@@ -161,11 +161,11 @@ function ProjectDetail() {
           ]
         }
       ],
-      solution: 'Completely reimagined the product with premium materials, rechargeable USB-C battery, customizable LED animations, and sleek design language inspired by luxury collectibles like Superplastic figures. This transformation justified a 4x price increase to $100+.'
+      solution: 'Complete product redesign from the ground up. Swapped cheap plastics for premium materials, replaced the clunky battery compartment with sleek USB-C charging, and created customizable LED animations. The new design took inspiration from high-end collectibles like Superplastic figures, clean lines, premium feel, and attention to details that matter to collectors. This transformation didn\'t just justify the higher price point; it created a completely different emotional connection with the product.'
     },
     {
       id: 2,
-      title: 'The website and branding felt childish and failed to communicate luxury or emotional connection',
+      title: 'The website and branding felt like a kids\' playpen when we needed to communicate luxury and emotional connection',
       designSections: [
         {
           label: 'Old Website',
@@ -202,11 +202,11 @@ function ProjectDetail() {
           ]
         }
       ],
-      solution: 'Redesigned the entire digital experience using Apple\'s design principles: clean layouts, premium images, and storytelling that positioned Superfanz as a unique brand.'
+      solution: 'Completely rebuilt the digital experience using Apple\'s design principles as our north star. Clean layouts, premium photography, and storytelling that positioned SuperFanz as more than just a product. Every page was designed to feel like browsing a high-end gallery, not a toy store. Bounce rates dropped, time on site increased, and most importantly, people started talking about the brand differently.'
     },
     {
       id: 3,
-      title: 'How do we create buzz and demand for a completely repositioned product with no existing collector audience?',
+      title: 'Creating buzz for a completely repositioned product with zero existing collector audience felt impossible',
       designSections: [
         {
           label: 'Traditional Marketing Approach',
@@ -229,7 +229,7 @@ function ProjectDetail() {
           ]
         }
       ],
-      solution: 'Launched an artist collaboration program sending blank Superfanz figures to designers who would then hand-paint custom designs. We then would produce limited runs of these artist editions, leveraging their fanbase for authentic marketing while creating scarcity-driven demand among collectors.'
+      solution: 'Launched an artist collaboration program that turned our biggest challenge into our biggest advantage. We sent blank SuperFanz figures to designers and artists, who created one-of-a-kind painted pieces. Then we planned produced limited runs of the most popular designs. This did two things: it gave us authentic marketing through the artists\' fanbases, and it created the scarcity-driven demand that collectors love.'
     },
     {
       id: 4,
@@ -256,7 +256,7 @@ function ProjectDetail() {
       //     ]
       //   }
       // ],
-      solution: 'Implemented integrated project management system using Trello boards with cross-team visibility. Established weekly all-hands meetings and created shared design system with component library accessible to all teams.'
+      solution: 'Implemented a proper project management system using Trello with full cross-team visibility. Established weekly all-hands meetings where everyone shared progress and blockers. Created a shared design system with a component library that everyone could access. The result? 60% improvement in team productivity and way fewer "wait, I thought someone else was handling that" moments.'
     }
   ]
   },
@@ -271,25 +271,25 @@ function ProjectDetail() {
       role: 'Co-Founder & Operations Director',
       tools: 'Shopify Liquid, Meta Ads',
       credits: 'Lindsey Emery',
-      description: "What started as a friend's design vision became a journey of discovering authentic brand voice and community building. From navigating Chinese factories to finding our home in Colombian craftsmanship, to creating a brand from scratch, this project taught me that genuine connection beats polished marketing every time.",
+      description: 'What started when a friend asked "want to help me turn these idea into a real business?" became a year-long journey of discovering what it actually takes to build a brand from nothing. From Chinese factories to finding our home in Colombia, from creating brand identity to making it to Miami Swim Week, this project taught me that genuine connection beats polished marketing every time. Sometimes the best education comes from saying yes to someone you care about having a crazy idea.',
       challenges: [
         {
           id: 1,
-          title: 'As we grew, the ethical implications of our Chinese manufacturing became harder to ignore. Our values and our supply chain were pulling in different directions.',
+          title: 'As we grew, the ethical and financial implications of our Chinese manufacturing became harder to ignore and our values and our supply chain were pulling in different directions',
           oldDesign: '/images/project2-old-design.jpg',
           proposedDesign: '/images/project2-new-design.jpg',
-          solution: 'Embarked on a journey to find manufacturing partners who shared our values. Researched 5+ ethical manufacturers across Latin America, conducted virtual factory tours, and found our perfect match in Colombia.'
+          solution: 'Embarked on a complete supply chain overhaul to find manufacturing partners who shared our values. Researched 5+ ethical manufacturers across Latin America, conducted virtual factory tours, and eventually found our perfect match in Colombia. The transition wasn\'t just about ethics or money (although the tariffs were definitely a plus) the quality improvement was dramatic, and the story became part of what customers loved about the brand.'
         },
         {
           id: 2,
-          title: "Creating a brand from nothing, originally called \"Davie Swim,\" the name felt disconnected from the founder's story and lacked the emotional resonance needed to build genuine connection.",
+          title: 'Creating a brand from nothing felt overwhelming. Originally called "Davie Swim," the name felt disconnected from the founder\'s story and lacked emotional connection',
           oldDesign: '/images/project2-old-design.jpg',
           proposedDesign: '/images/project2-new-design.jpg',
-          solution: 'Transformed the entire brand identity into "Emeswim," weaving the founder\'s personal narrative and last name into the brand. Completely overhauled the website to tell the origin story, why these swimsuits matter, what drives the creation process, and the authentic passion behind each piece.'
+          solution: 'Completely reimagined the brand identity around "Emeswim," weaving the founder\'s personal story and last name into the brand. Rebuilt the website to tell the origin story, why these swimsuits matter, what drives the creation process, and the authentic passion behind each piece.',
         },
         {
           id: 3,
-          title: "Growing a customer base felt like shouting into the void and without established credibility or visibility, potential customers had no reason to trust or notice us.",
+          title: "Growing a customer base felt like shouting into the void and without established credibility or visibility, potential customers had no reason to trust or notice us'.",
           designSections: [
             {
               label: 'Makeshift Photos',
@@ -326,7 +326,7 @@ function ProjectDetail() {
               ]
             }
           ],
-          solution: 'Turned constraints into creativity by recruiting volunteer models who believed in the vision. Shot authentic lifestyle photos that captured real people in real moments, launched targeted ad campaigns, and cold-DMed influencers with intent and stories rather than generic pitches. Through this initiative, we built enough buzz to grow our following from 0 to 1000+ in a few months and receive an invitation to Miami Swim Week The Shows showing natural storytelling is far superior than a marketing budget'
+          solution: 'Turned constraints into creativity by recruiting volunteer models who believed in the vision. Shot authentic lifestyle photos that captured real people in real moments, launched targeted ad campaigns, and personally reached out to influencers with genuine stories rather than generic pitches. The breakthrough came from building community first, sales second. Through authentic storytelling and grassroots marketing, we grew from 0 to 1000+ followers and earned an invitation to Miami Swim Week. Sometimes connections is better than a budget.'
         }
       ]
     },
@@ -341,11 +341,11 @@ function ProjectDetail() {
       role: 'Founder & Community Architect',
       tools: 'Wordpress, HTML, CSS, JS, MailChimp, Trello, Discord',
       credits: 'All of my writers and editors',
-      description: 'Music discovery felt broken and algorithms were creating echo chambers while incredible artists remained invisible. I built Moosic Discovery as a human-curated platform that connected emerging talent with passionate listeners. What started as a personal project became a website with 10K monthly visitors discovering their new favorite artists, and all during a global pandemic.',
+      description: 'Music discovery felt broken to me. Algorithms were creating echo chambers while incredible artists remained invisible to the people who\'d love them most. Moosic Discovery started as my pandemic project to fix that, a human-curated platform where emerging talent could actually find their audience. What began as a personal passion became a website with 10K monthly visitors and a crash course in community building. Turns out when you give passionate people a platform and some structure, amazing things happen.',
       challenges: [
         {
           id: 1,
-          title: 'Needed to assemble a passionate team of 10 music lovers with zero budget and the clock ticking on our launch timeline.',
+          title: 'Needed to assemble a passionate team of music writers with zero budget and a ticking clock on our launch timeline',
           designSections: [
             {
               label: 'Original LinkedIn Posting',
@@ -357,18 +357,18 @@ function ProjectDetail() {
               ]
             }
           ],
-          solution: 'Turned LinkedIn into a talent discovery platform. Created a compelling mission-driven post that attracted 80+ applicants who believed in the vision. Conducted 20 interviews to find people who shared the passion, not just the skills.'
+          solution: 'Turned LinkedIn into my talent discovery platform. Created a mission-driven post that attracted 80+ applicants who believed in the vision, not just the paycheck. Conducted 20 interviews to find people who shared the passion, not just the skills. What I learned? When you\'re building something meaningful, the right people will find you and you just need to be clear about what you\'re building and why it matters.'
         },
         {
           id: 2,
-          title: 'Coordinating 10 remote team members felt like conducting an orchestra where everyone was in different time zones and playing different songs.',
+          title: 'Coordinating 10 remote volunteers across different time zones felt like conducting an orchestra where everyone was playing different songs',
           oldDesign: '/images/project3-old-design.jpg',
           proposedDesign: '/images/project3-new-design.jpg',
-          solution: 'Created structure that worked with people\'s lives, not against them. Bi-weekly all-hands became our heartbeat, Discord channels kept the daily energy flowing, and individual check-ins ensured nobody felt lost in the mix. Assigned editors to different groups of writers, allowing me to focus on the website and brand.'
+          solution: 'Created structure that worked with people\'s lives, not against them. Bi-weekly all-hands became our heartbeat for big picture alignment, Discord channels kept daily energy flowing, and individual check-ins ensured nobody felt lost. Assigned editors to different groups of writers, which let me focus on the website and brand while ensuring quality stayed high. The secret was treating everyone like the passionate writers they were, not like free labor.'
         },
         {
           id: 3,
-          title: 'Launching with zero marketing budget meant we needed to create genuine buzz, not just noise.',
+          title: 'Launching with zero marketing budget meant we needed to create some buzz, not just noise',
           designSections: [
             {
               label: 'Piece written on moosic',
@@ -389,7 +389,7 @@ function ProjectDetail() {
               ]
             }
           ],
-          solution: 'Built partnerships with other magazines who believed in supporting emerging artists. Created content that artists wanted to share because it genuinely elevated their work, turning our featured musicians into our marketing team. Sold stickers to support server costs and welcomed community submissions to find new talent.'
+          solution: 'Built partnerships with other magazines who believed in supporting emerging artists. Created content that artists actually wanted to share because it genuinely elevated their work which effectively turned our featured musicians into our marketing team. Sold stickers to support server costs and opened up community submissions to find new talent. I learned that authentic enthusiasm spreads faster than any paid campaign could.'
         }
       ]
     },
@@ -404,11 +404,11 @@ function ProjectDetail() {
       role: 'Solo Developer & Product Designer',
       tools: 'Python, React, Render, npm, Stripe, AWS',
       credits: 'ChatGPT, Claude',
-      description: 'The gap between having an idea and creating something tangible felt too wide. I built an AI-powered tool that turns simple prompts into complete ebooks with covers, chapters, formatting, everything. Wanted to create a project that I felt proud of yet would be useful to others.',
+      description: 'I\'ve always been fascinated by the gap between having a great idea and actually creating something with it. EbookGen was my attempt to close that gap, at least for books. Using OpenAI\'s API and some creative prompt engineering, I built a tool that takes your rough concept and hands you back a complete ebook, cover and all. It taught me as much about user experience design as it did about AI implementation.',
       challenges: [
         {
           id: 1,
-          title: 'AI-generated content looked like it was assembled by a robot and the inconsistent formatting made every PDF feel amateur and disconnected.',
+          title: 'AI-generated content often feels robotic and disconnected, plus inconsistent formatting made every PDF look amateurish',
           designSections: [
             {
               label: 'Example of a generated Ebook',
@@ -437,21 +437,21 @@ function ProjectDetail() {
               ]
             }
           ],
-          solution: 'Created a design system the program would undestand. Templating that automatically structures content, organizing algorithms that create logical flow, and quality checks that ensure every PDF looks intentionally crafted.'
+          solution: 'Built a design system that the AI could understand and follow. Created templates that automatically structured content, developed algorithms that ensure logical flow between chapters, and implemented error handling. The key was treating AI like a really fast intern and just give it clear instructions and good templates, and it can produce a pretty good PDF.'
         },
         {
           id: 2,
-          title: 'Connecting Python backend logic with Stripe payment processing and managing deployment servers required orchestrating technologies I\'d never touched before.',
+          title: 'Connecting Python backend logic with Stripe payments and managing deployment felt like learning three jobs at once',
           oldDesign: '/images/project4-old-design.jpg',
           proposedDesign: '/images/project4-new-design.jpg',
-          solution: 'Approached each technical challenge systematically, leveraging AI tools not just for code generation but as learning companions. Built the payment flow step by step, tested extensively in sandbox environments, and deployed incrementally to catch issues early. Through this I was able to implemented full-stack functionality with secure payment processing and reliable deployment, demonstrating that methodical learning can overcome experience gaps'
+          solution: 'Approached each technical challenge methodically, using AI tools not just for code generation but as learning companions. Built the payment flow step by step, tested everything extensively in sandbox environments, and deployed incrementally to catch issues early. The a-ha moment was realizing that maybe I didn\'t need to understand every line of code, I needed to understand the user experience and work backwards from there.'
         },
         {
           id: 3,
-          title: 'Creating something functional was only half the battle but getting people to discover, try, and find genuine value in the tool required understanding user psychology and market dynamics I hadn\'t considered.',
+          title: 'CBuilding something functional was only half the battle it\s getting people to discover and actually use the tool required understanding psychology, not just technology',
           oldDesign: '/images/project4-old-design.jpg',
           proposedDesign: '/images/project4-new-design.jpg',
-          solution: 'Focused on solving real problems rather than showcasing technology. Gathered feedback from potential users early and often, refined the user experience based on actual behavior patterns, and positioned the tool as a creative enabler rather than a technical showcase. Through this I was able to attract engaged users who found genuine utility in the platform, validating that user-centered design matters more than technical complexity.'
+          solution: 'Focused relentlessly on solving real problems rather than showcasing the tech. Gathered feedback from potential users early and often, refined the experience based on actual behavior patterns, and positioned the tool as a creative enabler rather than a technical thing. The users who stuck around weren\'t impressed by the AI, they just were happy that there was a tool to automate the work they were going to do anyways.'
         }
       ]
     }

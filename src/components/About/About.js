@@ -18,7 +18,7 @@ function About() {
           <div className="news-ticker">
             <div className="fade-left"></div>
             <div className="news-ticker-content">
-              <p>Currently building Livenue, a musician-venue booking platform for NYC. — Bridging the gap between creativity and technology. — Building solutions that empower emerging artists and venue owners across NYC. — Combining product management experience with music industry insights to solve real connection problems. —</p>
+              <p>Currently building Livenue, a musician-venue booking platform for NYC. — Bridging the gap between creativity and technology. — Building things that matter to artists, one conversation at a time. —</p>
             </div>
             <div className="fade-right"></div>
           </div>
@@ -66,15 +66,15 @@ function About() {
             <div className="other-grid">
               <div className="other-item card">
                 <h4>Livenue Platform</h4>
-                <p>Building MVP for NYC musician-venue marketplace, applying lessons from scaling emeswim and Moosic Discovery communities</p>
+                <p>Building something I wish existed when I was coordinating events, a way for musicians and venues to actually find each other without the usual headaches. Currently focusing on the MVP and research.</p>
               </div>
               <div className="other-item card featured">
-                <h4>AI-Powered Development</h4>
-                <p>Successfully built and deployed <a href="https://ebookgen.app">ebookgen.app</a>, an AI-powered Ebook PDF generator using ChatGPT API and DALL-E, proving ability to implement complex technical solutions</p>
+                <h4>AI That Works For You</h4>
+                <p>Successfully shipped <a href="https://ebookgen.app">ebookgen.app</a>. A Python script that turns user input into actual PDFs using ChatGPT API, proving ability to implement complex technical solutions.</p>
               </div>
               <div className="other-item card">
-                <h4>Technical Growth</h4>
-                <p>Leveraging AI tools as coding mentors to bridge the gap between product vision and technical execution</p>
+                <h4>Learning by Building</h4>
+                <p>Using AI as my coding mentor to bridge the gap between product vision and technical execution. Turns out the best way to understand new tech is to build something real with it.</p>
               </div>
             </div>
           </div>
