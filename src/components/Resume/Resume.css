@@ -530,13 +530,13 @@
   }
   
   .resume-modal {
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 140px);
     margin-bottom: 50px;
   }
   
   /* Even thicker bar on small phones */
   .resume-color-bar {
-    height: 12px;
+    height: 16px;
   }
 }
 
