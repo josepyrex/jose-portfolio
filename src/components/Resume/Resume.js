@@ -66,19 +66,19 @@ function Resume({ isOpen, onClose }) {
               <div className="resume-contact-grid">
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Email</span>
-                  <span className="resume-contact-value">jose@piereks.com</span>
+                  <a href="mailto:piereks@gmail.com" className="resume-contact-value">piereks@gmail.com</a>
                 </div>
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Phone</span>
-                  <span className="resume-contact-value">(954) 804-6810</span>
+                  <a href="tel:9548046810" className="resume-contact-value">(954) 804-6810</a>
                 </div>
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">Location</span>
                   <span className="resume-contact-value">Brooklyn, NY</span>
                 </div>
                 <div className="resume-contact-item">
-                  <span className="resume-contact-label">Portfolio</span>
-                  <span className="resume-contact-value">piereks.com</span>
+                  <span className="resume-contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/josepyrex" className="resume-contact-value">/in/josepyrex</a>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@ function Resume({ isOpen, onClose }) {
         {/* Footer */}
         <div className="resume-footer">
           <div className="resume-footer-left">
-            <span>Last updated: January 2025</span>
+            <span>Last updated: July 2025</span>
           </div>
           <div className="resume-footer-right">
             <button className="resume-download-btn" onClick={handleDownload}>

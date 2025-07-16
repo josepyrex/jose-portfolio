@@ -359,6 +359,11 @@
   .project-hero {
     height: 50vh;
   }
+
+  .project-hero-image {
+    object-fit: cover;
+    object-position: center;
+  }
   
   .project-intro {
     grid-template-columns: 1fr;
@@ -488,9 +493,49 @@
   .design-images.grid-three {
     grid-template-columns: 1fr;
   }
+
+  .project-content-container {
+  background-color: #fff;
+  padding: 40px 20px;
+  }
+
+  .detail-project-title {
+    font-size: 3.2rem;
+  }
   
   .design-images {
     gap: 15px;
+  }
+  
+  .live-banner,
+  .unfunded-banner,
+  .prototype-banner,
+  .concept-banner {
+    padding: 16px 16px;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 0 16px;
+  }
+  
+  .banner-indicator {
+    margin-right: 0;
+  }
+  
+  .banner-text {
+    font-size: 14px;
+    line-height: 1.5;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .arrow-icon {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -554,4 +599,15 @@
   color: white;
   text-align: center;
   margin-top: 10px;
+}
+
+@media (max-width: 360px) {
+  .banner-text {
+    font-size: 12px;
+  }
+  
+  .banner-text a {
+    display: block;
+    margin: 4px 0;
+  }
 }

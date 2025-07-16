@@ -207,7 +207,7 @@
 
 .resume-contact-value {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -232,32 +232,32 @@
 
 .resume-job-title {
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   margin: 0 0 4px 0;
 }
 
 .resume-company {
   color: #2DD4BF;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
   font-weight: 500;
 }
 
 .resume-date {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   background: rgba(255, 255, 255, 0.05);
-  padding: 4px 12px;
+  padding: 3px 4px;
   border-radius: 12px;
   white-space: nowrap;
 }
 
 .resume-description {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -269,20 +269,21 @@
 
 .resume-skill-category h5 {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0 0 12px 0;
 }
 
 .resume-skill-category ul {
   list-style: none;
+  font-size: 13px;
   padding: 0;
   margin: 0;
 }
 
 .resume-skill-category li {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.8;
   position: relative;
   padding-left: 16px;
@@ -470,14 +471,31 @@
   }
 
   .resume-footer {
-    padding: 16px 24px;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
+    padding: 12px 24px;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .resume-contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .resume-footer-left span {
+    font-size: 12px; /* Smaller text */
+  }
+
+  .resume-download-btn {
+    padding: 6px 12px; 
+    font-size: 12px; 
+    border-radius: 6px;
+    gap: 4px; 
+  }
+
+  .resume-download-btn svg {
+    width: 12px; /* Smaller icon */
+    height: 12px;
   }
 
   .resume-skills-grid {
@@ -502,7 +520,7 @@
 
   /* Enhanced mobile animation with thicker bar */
   .resume-bar-segment {
-    animation-duration: 1.2s;
+    animation-duration: 1.6s;
   }
   
   .resume-bar-segment:nth-child(1) {
@@ -530,7 +548,7 @@
   }
   
   .resume-modal {
-    max-height: calc(100vh - 140px);
+    max-height: calc(100vh - 120px);
     margin-bottom: 50px;
   }
   
