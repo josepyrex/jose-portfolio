@@ -176,11 +176,10 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                   target="_blank" 
                   rel="noopener noreferrer"
                   onClick={(e) => {
-                    e.preventDefault();
                     scrambleText('music', 'My Playlist ;)');
                     setTimeout(() => {
                       window.open('https://open.spotify.com/playlist/3YGnyTVFnA9YnjFltHmtFD?si=b631bed2abe9494a', '_blank');
-                    }, 1500);
+                    }, 1000);
                   }}
                 >
                   <span className="link-circle yellow"></span>
@@ -194,11 +193,10 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                   target="_blank" 
                   rel="noopener noreferrer"
                   onClick={(e) => {
-                    e.preventDefault();
                     scrambleText('github', 'github');
                     setTimeout(() => {
                       window.open('https://github.com/josepyrex', '_blank');
-                    }, 1500);
+                    }, 1000);
                   }}
                 >
                   <span className="link-circle purple"></span>
@@ -212,11 +210,10 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                   target="_blank" 
                   rel="noopener noreferrer"
                   onClick={(e) => {
-                    e.preventDefault();
                     scrambleText('instagram', 'Instagram');
                     setTimeout(() => {
                       window.open('https://instagram.com/josepyrex', '_blank');
-                    }, 1500);
+                    }, 1000);
                   }}
                 >
                   <span className="link-circle red"></span>

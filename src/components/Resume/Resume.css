@@ -442,12 +442,13 @@
     padding: 10px;
     align-items: flex-start;
     padding-top: 40px;
+    padding-bottom: max(100px, env(safe-area-inset-bottom, 100px));
   }
 
   .resume-modal {
-    max-height: calc(100vh - 120px);
+    max-height: calc(100vh - 160px);
     border-radius: 16px;
-    margin-bottom: 60px;
+    margin-bottom: max(80px, calc(env(safe-area-inset-bottom, 80px) + 40px));
   }
 
   .resume-header {
@@ -464,7 +465,8 @@
   }
 
   .resume-content {
-    padding: 0 24px 16px;
+    padding: 20px 24px 16px;
+    max-height: calc(100vh - 280px);
   }
 
   .resume-footer {

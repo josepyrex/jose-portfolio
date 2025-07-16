@@ -100,7 +100,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Jun 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                  What I love about retail is the immediate feedback—you know right away if what you're doing works. Maintained 99/100 satisfaction ratings while generating $1M+ in yearly sales by treating every customer interaction like a conversation, not a transaction.
+                   Maintained 99/100 satisfaction ratings while generating $1M+ in yearly sales by treating every customer interaction like a conversation, not a transaction.
                 </p>
               </div>
 
@@ -113,7 +113,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Mar 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                  Co-founded an international swimwear brand that went from sketches to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service to that stressful-but-rewarding transition from Chinese to Colombian manufacturing.
+                  Co-founded an swimwear brand that went from idea to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service and international manufacturing.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">May 2022 - Jun 2024</span>
                 </div>
                 <p className="resume-description">
-                  Led the transformation concept of a toy company into a luxury collectible brand—including those bi-weekly video calls with manufacturers in China at ungodly hours. Built the company website and handled UX design while keeping design, marketing, and engineering teams aligned.
+                  Led the transformation concept of a toy company into a luxury collectible brand. Built the company website and handled UX design while keeping design, marketing, and engineering teams aligned.
                 </p>
               </div>
 
@@ -139,7 +139,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Jan 2020 - May 2023</span>
                 </div>
                 <p className="resume-description">
-                  Built a music discovery platform and assembled a team through one LinkedIn post that somehow got 80+ applications. Interviewed 20 candidates, hired 10 passionate volunteers, and grew to 10K monthly visitors by focusing on human-curated recommendations.
+                  Built a music discovery platform and lead a team 20+ volunteers grew to 10K monthly visitors by focusing on human-curated recommendations.
                 </p>
               </div>
             </div>
