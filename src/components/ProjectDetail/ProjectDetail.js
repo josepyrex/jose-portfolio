@@ -271,7 +271,7 @@ function ProjectDetail() {
       role: 'Co-Founder & Operations Director',
       tools: 'Shopify Liquid, Meta Ads',
       credits: 'Lindsey Emery',
-      description: 'What started when a friend asked "want to help me turn these idea into a real business?" became a year-long journey of discovering what it actually takes to build a brand from nothing. From Chinese factories to finding our home in Colombia, from creating brand identity to making it to Miami Swim Week, this project taught me that genuine connection beats polished marketing every time. Sometimes the best education comes from saying yes to someone you care about having a crazy idea.',
+      description: 'What started when a friend asked "want to help me turn these idea into a real business?" became a year-long journey of discovering what it actually takes to build a brand from nothing. From creating brand identity to making it to Miami Swim Week, this project taught me that genuine connection beats polished marketing every time. Sometimes the best education comes from saying yes to a friend\'s crazy idea.',
       challenges: [
         {
           id: 1,
