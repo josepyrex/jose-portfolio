@@ -94,7 +94,7 @@ function Resume({ isOpen, onClose }) {
               <div className="resume-experience-item">
                 <div className="resume-experience-header">
                   <div>
-                    <h4 className="resume-job-title">Specialist & Technical Consultant</h4>
+                    <h4 className="resume-job-title">Specialist</h4>
                     <p className="resume-company">Apple Inc.</p>
                   </div>
                   <span className="resume-date">Jun 2024 - Present</span>
