@@ -94,13 +94,13 @@ function Resume({ isOpen, onClose }) {
               <div className="resume-experience-item">
                 <div className="resume-experience-header">
                   <div>
-                    <h4 className="resume-job-title">Specialist</h4>
+                    <h4 className="resume-job-title">Automation Engineer</h4>
                     <p className="resume-company">Apple Inc.</p>
                   </div>
                   <span className="resume-date">Jun 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                   Maintained 99/100 satisfaction ratings while generating $1M+ in yearly sales by treating every customer interaction like a conversation, not a transaction.
+                   Testing audio quality across iPhone, HomePod, and Apple TV. Validating everything from spatial audio rendering to codec performance. The work combines manual testing with Python automation, analyzing how audio behaves across different hardware and software configurations. Im learning to systematically isolate issues in audio drivers and firmware while building test frameworks that catch regressions before they reach millions of users.
                 </p>
               </div>
 
