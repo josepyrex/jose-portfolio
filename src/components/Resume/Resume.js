@@ -78,7 +78,7 @@ function Resume({ isOpen, onClose }) {
                 </div>
                 <div className="resume-contact-item">
                   <span className="resume-contact-label">LinkedIn</span>
-                  <a href="https://linkedin.com/in/josepyrex" className="resume-contact-value">/in/josepyrex</a>
+                  <a href="https://linkedin.com/in/piereks" className="resume-contact-value">/in/piereks</a>
                 </div>
               </div>
             </div>
