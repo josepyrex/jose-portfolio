@@ -1,13 +1,12 @@
 // src/components/ProjectDetail/ProjectDetail.js
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ProjectHeader from '../ProjectHeader/ProjectHeader';
 import Footer from '../Footer/Footer'; // Import the main Footer component
 import './ProjectDetail.css';
 
 function ProjectDetail() {
   const { slug } = useParams();
-  const navigate = useNavigate();
   
   // Scroll to top when page loads
   useEffect(() => {
@@ -448,7 +447,7 @@ function ProjectDetail() {
         },
         {
           id: 3,
-          title: 'Building something functional was only half the battle it\s getting people to discover and actually use the tool required understanding psychology, not just technology',
+          title: 'Building something functional was only half the battle its getting people to discover and actually use the tool required understanding psychology, not just technology',
           oldDesign: '/images/project4-old-design.jpg',
           proposedDesign: '/images/project4-new-design.jpg',
           solution: 'Focused relentlessly on solving real problems rather than showcasing the tech. Gathered feedback from potential users early and often, refined the experience based on actual behavior patterns, and positioned the tool as a creative enabler rather than a technical thing. The users who stuck around weren\'t impressed by the AI, they just were happy that there was a tool to automate the work they were going to do anyways.'
