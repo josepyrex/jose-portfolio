@@ -8,7 +8,7 @@ function About() {
     <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual QA Audio Engineer</span> <span className="accent"></span> specializing in AI-powered solutions, community growth, and transforming ideas into products.</h2>
+          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual QA Engineer</span> <span className="accent"></span> specializing in AI-powered solutions, thorough testing, and transforming ideas into products.</h2>
         </div>
         
         <div className="divider"></div>
@@ -31,9 +31,9 @@ function About() {
           <div className="content-col">
             <h3 className="section-label">WHAT I DO</h3>
             <div className="section-content">
-              <p className="highlight-item">Product Strategy & Community Growth</p>
+              <p className="highlight-item">Automation and Engineering</p>
               <p className="highlight-item">AI Implementation & Development</p>
-              <p>Brand Building & Marketing</p>
+              <p>Product Strategy & Community Growth</p>
               <p className="highlight-item">Technical Problem Solving</p>
             </div>
           </div>
@@ -42,15 +42,15 @@ function About() {
             <h3 className="section-label">EXPERIENCE</h3>
             <div className="section-content experience-content">
               <div className="experience-item">
-                <span className="experience-company">Apple Inc.</span>
+                <span className="experience-company highlight-item">Apple Inc.</span>
                 <span className="experience-year">2024-</span>
               </div>
               <div className="experience-item">
-                <span className="experience-company highlight-item">SuperFanz</span>
+                <span className="experience-company">SuperFanz</span>
                 <span className="experience-year">2023-</span>
               </div>
               <div className="experience-item">
-                <span className="experience-company highlight-item">Moosic Discovery</span>
+                <span className="experience-company">Moosic Discovery</span>
                 <span className="experience-year">2020-23</span>
               </div>
             </div>
