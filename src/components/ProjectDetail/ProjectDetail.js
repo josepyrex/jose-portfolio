@@ -1,6 +1,6 @@
 // src/components/ProjectDetail/ProjectDetail.js
 import React, { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import ProjectHeader from '../ProjectHeader/ProjectHeader';
 import Footer from '../Footer/Footer'; // Import the main Footer component
 import './ProjectDetail.css';
