@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Footer.css';
 
+
 function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
   const currentYear = new Date().getFullYear();
   const [textElements, setTextElements] = useState({
@@ -78,7 +79,8 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
   };
   
   useEffect(() => {
-    // Initial animations with staggered timing
+    const currentFooter = footerRef.current; // ← 1. Capture ref value
+
     const originalTexts = {
       contact: "Let's Chat",
       email: "piereks@gmail.com",
@@ -91,7 +93,6 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
       name: "piereks.com"
     };
     
-    // Stagger the animations
     setTimeout(() => scrambleText('contact', originalTexts.contact), 300);
     setTimeout(() => scrambleText('email', originalTexts.email), 500);
     setTimeout(() => scrambleText('links', originalTexts.links), 700);
@@ -102,16 +103,12 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
     setTimeout(() => scrambleText('message', originalTexts.message), 1700);
     setTimeout(() => scrambleText('name', originalTexts.name), 1900);
     
-    // Add scroll trigger for animations
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          // Re-trigger animations when scrolled into view
           Object.keys(originalTexts).forEach((key, index) => {
             setTimeout(() => {
-              if (!animatingElements[key]) {
-                scrambleText(key, originalTexts[key]);
-              }
+              scrambleText(key, originalTexts[key]);
             }, index * 200);
           });
         }
@@ -119,15 +116,16 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
       { threshold: 0.3 }
     );
     
-    if (footerRef.current) {
-      observer.observe(footerRef.current);
+    if (currentFooter) {
+      observer.observe(currentFooter);
     }
     
     return () => {
-      if (footerRef.current) {
-        observer.unobserve(footerRef.current);
+      if (currentFooter) {           // ← 2. Use local variable in cleanup
+        observer.unobserve(currentFooter);
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
