@@ -8,7 +8,7 @@ function About() {
     <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual product manager</span> <span className="accent"></span> specializing in AI-powered solutions, community growth, and transforming ideas into products.</h2>
+          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual QA Audio Engineer</span> <span className="accent"></span> specializing in AI-powered solutions, community growth, and transforming ideas into products.</h2>
         </div>
         
         <div className="divider"></div>
@@ -42,7 +42,7 @@ function About() {
             <h3 className="section-label">EXPERIENCE</h3>
             <div className="section-content experience-content">
               <div className="experience-item">
-                <span className="experience-company">Apple Retail</span>
+                <span className="experience-company">Apple Inc.</span>
                 <span className="experience-year">2024-</span>
               </div>
               <div className="experience-item">
