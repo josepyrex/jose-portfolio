@@ -244,10 +244,10 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
       </div>
       
       <div className="color-bar">
-        <div className="bar-segment teal"></div>
-        <div className="bar-segment yellow"></div>
-        <div className="bar-segment red"></div>
-        <div className="bar-segment purple"></div>
+        <div className="bar-segment ramp-1"></div>
+        <div className="bar-segment ramp-2"></div>
+        <div className="bar-segment ramp-3"></div>
+        <div className="bar-segment ramp-4"></div>
       </div>
     </footer>
     </section>
