@@ -12,8 +12,48 @@
   margin: 0 auto;
 }
 
+/* Section header: channel-status style bar */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'IBM Plex Mono', monospace;
+  padding-bottom: 12px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(45, 212, 191, 0.25);
+}
+
+.projects-header-label {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: #2DD4BF;
+}
+
+.projects-header-label::before {
+  content: '// ';
+  color: rgba(45, 212, 191, 0.5);
+}
+
+.projects-header-count {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
 .project-item {
   margin-bottom: 40px;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateX(10px);
 }
 
 .project-row {
@@ -22,32 +62,48 @@
   width: 100%;
 }
 
+/* Meta row: instrument readout */
 .project-meta {
   display: grid;
-  grid-template-columns: 50px 1fr 1fr;
+  grid-template-columns: 60px 1fr auto;
+  align-items: baseline;
   width: 100%;
   margin-bottom: 20px;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .project-id {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.7);
   grid-column: 1;
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  color: #2DD4BF;
+  text-shadow: 0 0 6px rgba(45, 212, 191, 0.45);
 }
 
 .project-category {
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.6);
   grid-column: 2;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.project-category::before {
+  content: '[ ';
+  color: rgba(45, 212, 191, 0.6);
+}
+
+.project-category::after {
+  content: ' ]';
+  color: rgba(45, 212, 191, 0.6);
 }
 
 .project-year {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: right;
   grid-column: 3;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: right;
 }
 
 .project-content {
@@ -61,11 +117,61 @@
   width: 100%;
 }
 
+/* Scope frame around the image: faint border, corner brackets, scanlines */
+.project-frame {
+  position: relative;
+  padding: 10px;
+  border: 1px solid rgba(45, 212, 191, 0.16);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat left 0 top 0 / 14px 2px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat left 0 top 0 / 2px 14px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat right 0 top 0 / 14px 2px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat right 0 top 0 / 2px 14px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat left 0 bottom 0 / 14px 2px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat left 0 bottom 0 / 2px 14px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat right 0 bottom 0 / 14px 2px,
+    linear-gradient(#2DD4BF, #2DD4BF) no-repeat right 0 bottom 0 / 2px 14px;
+  opacity: 0.55;
+  transition: opacity 0.3s ease;
+}
+
+/* CRT scanlines over the image area only (inside the padding) */
+.project-frame::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.12) 3px,
+    rgba(0, 0, 0, 0) 4px
+  );
+}
+
+.project-link:hover .project-frame {
+  border-color: rgba(45, 212, 191, 0.45);
+  box-shadow: 0 0 22px rgba(45, 212, 191, 0.12);
+}
+
+.project-link:hover .project-frame::before {
+  opacity: 1;
+}
+
 .project-image {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
 }
 
 .project-details-col {
@@ -81,6 +187,34 @@
   margin-bottom: 20px;
   letter-spacing: -0.02em;
   color: white;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Blinking block cursor appears after the title on hover */
+.main-project-title::after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 0.75em;
+  margin-left: 10px;
+  background-color: transparent;
+  vertical-align: baseline;
+}
+
+.project-link:hover .main-project-title {
+  color: #2DD4BF;
+  text-shadow: 0 0 8px rgba(45, 212, 191, 0.45), 0 0 20px rgba(45, 212, 191, 0.15);
+}
+
+.project-link:hover .main-project-title::after {
+  background-color: #2DD4BF;
+  box-shadow: 0 0 10px rgba(45, 212, 191, 0.6);
+  animation: projectCursorBlink 1s step-end infinite;
+}
+
+@keyframes projectCursorBlink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .main-project-description {
@@ -89,24 +223,39 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Graticule divider: dim baseline with teal tick marks */
 .bottom-line {
   margin-top: 40px;
   width: 100%;
 }
 
 .divider-lines {
-  display: flex;
+  position: relative;
   width: 100%;
+  height: 7px;
+}
+
+.divider-lines::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* The line pattern at the bottom */
-.divider-lines::before,
 .divider-lines::after {
   content: '';
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(45, 212, 191, 0.35) 0px,
+    rgba(45, 212, 191, 0.35) 1px,
+    transparent 1px,
+    transparent 120px
+  );
 }
 
 /* Responsive design */
@@ -115,112 +264,28 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .project-meta {
     grid-template-columns: 50px 1fr 80px;
   }
-  
+
   .main-project-title {
-    font-size: 32px;
-    margin-top: 20px;
-  }
-}
-
-/* Add these styles to your Projects.css file */
-.project-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .project-link:hover {
-    transform: translateX(10px);
-  }
-  
-  .project-link:hover .main-project-title {
-    color: #2DD4BF;
-  }
-  
-  .project-link:hover .project-image {
-    transform: scale(1.02);
-  }
-  
-  .project-image {
-    transition: transform 0.5s ease;
-  }
-
-  /* Add these styles to your Projects.css file */
-
-.project-image-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.03);
-    aspect-ratio: 16/9;
-    position: relative;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .project-image-container:hover .project-image {
-    transform: scale(1.05);
-  }
-  
-  .project-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: #2DD4BF;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: transform 0.3s ease;
-  }
-  
-  .project-link:hover {
-    transform: translateX(5px);
-  }
-
-  /* Replace the previous CSS with this */
-
-@media (max-width: 768px) {
-  .main-project-title {
-    font-size: 28px; /* Reduced from 32px */
+    font-size: 28px;
     line-height: 1.1;
+    margin-top: 20px;
   }
-  
+
   .main-project-description {
     font-size: 15px;
     line-height: 1.4;
   }
-  
-@media (min-width: 1024px) {
-  .challenges-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-   }
-  
-  /* Remove the grid-row spanning - let content flow naturally */
-  .project-challenge {
-    margin-bottom: 40px;
-    }
-  }
 
-@media (max-width: 1023px) {
+  /* Preserved from previous stylesheet: mobile layout for project detail pages */
   .challenges-container {
     display: block;
-    }
-  
+  }
+
   .project-challenge {
     margin-bottom: 60px;
-    }
   }
 }

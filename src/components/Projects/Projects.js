@@ -25,7 +25,7 @@ function Projects() {
     },
     {
       id: "03",
-      category: "Case Study",
+      category: "CASE STUDY",
       year: "2024",
       title: "emeswim",
       image: "/images/emeswim/emeswim.png",
@@ -34,7 +34,7 @@ function Projects() {
     },
     {
       id: "04",
-      category: "Moosic Discovery",
+      category: "CASE STUDY",
       year: "2021",
       title: "Moosic Discovery",
       image: "/images/moosic/newMoosicLogoWithCow.png",
@@ -55,6 +55,10 @@ function Projects() {
   return (
     <section className="projects-section" id="projects">
       <div className="projects-container">
+        <div className="projects-header">
+          <span className="projects-header-label">CASE STUDIES</span>
+          <span className="projects-header-count">{String(projects.length).padStart(2, '0')} RECORDS</span>
+        </div>
         {projects.map((project) => (
           <div className="project-item" key={project.id}>
             <Link to={`/project/${project.slug}`} className="project-link">
@@ -67,17 +71,19 @@ function Projects() {
                 
                 <div className="project-content">
                   <div className="project-image-col">
-                    <img 
-                      src={project.image} 
-                      alt={`${project.title} project`} 
-                      className="project-image" 
-                      loading="lazy"
-                    />
+                    <div className="project-frame">
+                      <img
+                        src={project.image}
+                        alt={`${project.title} project`}
+                        className="project-image"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                   
                   <div className="project-details-col">
                     <h3 className="main-project-title">{project.title}</h3>
-                    <p className=" main-project-description">{project.description}</p>
+                    <p className="main-project-description">{project.description}</p>
                   </div>
                 </div>
               </div>
