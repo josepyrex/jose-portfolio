@@ -20,6 +20,7 @@
   /* Add subtle background only when scrolled */
   background-color: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(45, 212, 191, 0.15);
 }
 
 .logo {
@@ -29,11 +30,35 @@
 }
 
 .logo-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   letter-spacing: -0.02em;
+}
+
+/* Terminal underscore cursor after the logo */
+.logo-text::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  margin-left: 5px;
+  vertical-align: baseline;
+  background-color: #2DD4BF;
+  box-shadow: 0 0 8px rgba(45, 212, 191, 0.6);
+  animation: logoCursorBlink 1.2s step-end infinite;
+}
+
+@keyframes logoCursorBlink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-text::after {
+    animation: none;
+  }
 }
 
 .nav-list {
@@ -43,17 +68,38 @@
 }
 
 .nav-item a {
-  color: white;
-  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+/* Trace underline sweeps in from the left on hover */
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background-color: #2DD4BF;
+  box-shadow: 0 0 6px rgba(45, 212, 191, 0.6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
 
 .nav-item a:hover {
   color: #2DD4BF;
+  text-shadow: 0 0 8px rgba(45, 212, 191, 0.35);
+}
+
+.nav-item a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Mobile Tab Bar Navigation - pill shaped at the top */
