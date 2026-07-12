@@ -1,7 +1,4 @@
 /* src/components/Footer/Footer.css */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 .footer-section {
     padding: 20px 20px 0px;
     background-color: #121212;
@@ -77,7 +74,7 @@
   margin-bottom: 40px;
   transition: color 0.3s ease;
   cursor: pointer;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .footer-email:hover {
@@ -101,7 +98,7 @@
   display: flex;
   align-items: center;
   transition: color 0.3s ease;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .footer-links a:hover {
@@ -125,15 +122,15 @@
 }
 
 .yellow {
-  background-color: #FFD60A;
+  background-color: #5EEAD4;
 }
 
 .red {
-  background-color: #FF4365;
+  background-color: #14B8A6;
 }
 
 .purple {
-  background-color: #8A85FF;
+  background-color: #0F766E;
 }
 
 .arrow {
@@ -149,7 +146,7 @@
 }
 
 .animation-text {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   letter-spacing: 0.05em;
   opacity: 0.8;
@@ -189,7 +186,7 @@
 }
 
 .animating {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 /* Responsive design */

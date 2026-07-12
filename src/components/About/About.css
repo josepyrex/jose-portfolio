@@ -1,6 +1,4 @@
 /* Enhanced src/components/About/About.css with color accents and design touches */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 .about-section {
   display: flex;
@@ -51,7 +49,7 @@
 }
 
 .about-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 2.9rem;
   line-height: 1.2;
   font-weight: 400;

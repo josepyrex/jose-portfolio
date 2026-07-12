@@ -1,7 +1,4 @@
 /* src/components/Resume/Resume.css */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
 /* Safe area support for iPhones with notches */
 @supports (padding: max(0px)) {
@@ -99,7 +96,7 @@
 }
 
 .resume-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 32px;
   font-weight: 400;
   color: white;
@@ -170,15 +167,15 @@
 }
 
 .resume-dot-yellow {
-  background: #FFD60A;
+  background: #5EEAD4;
 }
 
 .resume-dot-purple {
-  background: #8A85FF;
+  background: #0F766E;
 }
 
 .resume-dot-red {
-  background: #FF4365;
+  background: #14B8A6;
 }
 
 .resume-section-content {
@@ -208,7 +205,7 @@
 .resume-contact-value {
   color: white;
   font-size: 14px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .resume-experience-item {
@@ -411,15 +408,15 @@
 }
 
 .resume-bar-yellow {
-  background: #FFD60A;
+  background: #5EEAD4;
 }
 
 .resume-bar-red {
-  background: #FF4365;
+  background: #14B8A6;
 }
 
 .resume-bar-purple {
-  background: #8A85FF;
+  background: #0F766E;
 }
 
 @keyframes colorBarSlide {

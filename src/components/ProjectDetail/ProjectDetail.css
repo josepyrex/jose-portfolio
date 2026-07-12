@@ -1,6 +1,4 @@
 /* src/components/ProjectDetail/ProjectDetail.css */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 .project-detail {
   background-color: #fff;
@@ -96,7 +94,7 @@
 
 /* Live banner (existing) */
 .live-banner {
-  background-color: #2d8850;
+  background-color: #0E332F;
   color: white;
   padding: 20px 40px;
 }
@@ -104,33 +102,35 @@
 .live-dot {
   width: 12px;
   height: 12px;
-  background-color: rgb(23, 255, 43);
+  background-color: #5EEAD4;
+  box-shadow: 0 0 8px rgba(94, 234, 212, 0.7);
   border-radius: 50%;
   margin-right: 8px;
 }
 
 /* Unfunded banner */
 .unfunded-banner {
-  background-color: #FED608; /* Warm brown */
-  color: rgb(0, 0, 0);
+  background-color: #331522;
+  color: white;
   padding: 20px 40px;
 }
 
 .unfunded-dot {
   width: 12px;
   height: 12px;
-  background-color: #2a1810; /* Yellow/amber */
+  background-color: #F472B6;
+  box-shadow: 0 0 8px rgba(244, 114, 182, 0.5);
   border-radius: 50%;
   margin-right: 8px;
 }
 
 .unfunded-banner .banner-text a {
-  color: #2a1810;
+  color: #F472B6;
 }
 
 /* Prototype banner */
 .prototype-banner {
-  background-color: #1a237e; /* Deep blue */
+  background-color: #33290E;
   color: white;
   padding: 20px 40px;
 }
@@ -138,18 +138,19 @@
 .prototype-dot {
   width: 12px;
   height: 12px;
-  background-color: #2196F3; /* Blue */
+  background-color: #FBBF24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
   border-radius: 50%;
   margin-right: 8px;
 }
 
 .prototype-banner .banner-text a {
-  color: #2196F3;
+  color: #FBBF24;
 }
 
 /* Concept banner */
 .concept-banner {
-  background-color: #4a148c; /* Purple */
+  background-color: #211F38;
   color: white;
   padding: 20px 40px;
 }
@@ -157,7 +158,8 @@
 .concept-dot {
   width: 12px;
   height: 12px;
-  background-color: #8A85FF; /* Your brand purple */
+  background-color: #8A85FF;
+  box-shadow: 0 0 8px rgba(138, 133, 255, 0.5);
   border-radius: 50%;
   margin-right: 8px;
 }
@@ -203,7 +205,7 @@
 }
 
 .detail-project-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 3.5rem;
   line-height: 1.1;
   font-weight: 400;
@@ -267,7 +269,7 @@
 .challenge-dot {
   width: 14px;
   height: 14px;
-  background-color: #FF4365; /* Red dot from the example */
+  background-color: #14B8A6; /* Red dot from the example */
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -303,7 +305,7 @@
 .solution-dot {
   width: 14px;
   height: 14px;
-  background-color: #43ff6c; /* Red dot from the example */
+  background-color: #2DD4BF; /* Red dot from the example */
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -343,7 +345,7 @@
 
 /* Thank you section */
 .thank-you-section {
-  background-color: #2CD4BF; /* Dark green from the example */
+  background-color: #2DD4BF; /* Dark green from the example */
   color: rgb(0, 0, 0);
   padding: 40px;
   text-align: center;

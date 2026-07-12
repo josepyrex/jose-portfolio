@@ -554,6 +554,7 @@ function ProjectDetail() {
                         src={image.src} 
                         alt={image.alt} 
                         className="design-image" 
+                        loading="lazy"
                         onClick={() => setLightboxImage(image)}
                         style={{ cursor: 'pointer' }}
                       />

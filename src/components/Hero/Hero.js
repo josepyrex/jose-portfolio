@@ -13,20 +13,20 @@ function Hero() {
   useEffect(() => {
     const typeLines = async () => {
       const line1 = 'hello! i\'m jose francisco' ;
-      const line2 = 'i help turn ideas into products';
-      const line3 = 'currently leveraging AI tools';
-      const line4 = 'to solve artists\' problems';
+      const line2 = 'audio qa engineer at apple';
+      const line3 = 'testing the frameworks behind how';
+      const line4 = 'your devices listen, record & play';
       
       // Type line 1
       for (let i = 0; i <= line1.length; i++) {
         setText1(line1.substring(0, i));
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 45));
       }
       
       // Type line 2
       for (let i = 0; i <= line2.length; i++) {
         setText2(line2.substring(0, i));
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 45));
       }
       
       // Type line 3 and 4 simultaneously
@@ -38,7 +38,7 @@ function Hero() {
         if (i <= line4.length) {
           setText4(line4.substring(0, i));
         }
-        await new Promise(resolve => setTimeout(resolve, 50));
+        await new Promise(resolve => setTimeout(resolve, 30));
       }
       
       setIsTyping(false);

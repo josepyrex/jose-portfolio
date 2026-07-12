@@ -71,6 +71,7 @@ function Projects() {
                       src={project.image} 
                       alt={`${project.title} project`} 
                       className="project-image" 
+                      loading="lazy"
                     />
                   </div>
                   

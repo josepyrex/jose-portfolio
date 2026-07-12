@@ -98,7 +98,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
     setTimeout(() => scrambleText('links', originalTexts.links), 700);
     setTimeout(() => scrambleText('resume', originalTexts.resume), 900);
     setTimeout(() => scrambleText('music', originalTexts.music), 1100);
-    setTimeout(() => scrambleText('Github', originalTexts.github), 1300);
+    setTimeout(() => scrambleText('github', originalTexts.github), 1300);
     setTimeout(() => scrambleText('instagram', originalTexts.instagram), 1500);
     setTimeout(() => scrambleText('message', originalTexts.message), 1700);
     setTimeout(() => scrambleText('name', originalTexts.name), 1900);
@@ -187,11 +187,11 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
               </li>
               <li>
                 <a 
-                  href="https://github.com/in/josepiereks" 
+                  href="https://github.com/josepyrex" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   onClick={(e) => {
-                    scrambleText('github', 'github');
+                    scrambleText('github', 'Github');
                     setTimeout(() => {
                       window.open('https://github.com/josepyrex', '_blank');
                     }, 1000);

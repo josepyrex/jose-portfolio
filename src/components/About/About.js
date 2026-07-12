@@ -8,7 +8,7 @@ function About() {
     <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual QA Engineer</span> <span className="accent"></span> specializing in AI-powered solutions, thorough testing, and transforming ideas into products.</h2>
+          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual Audio QA Engineer at Apple</span> working on Core Audio frameworks — obsessed with sound, thorough testing, and turning ideas into products.</h2>
         </div>
         
         <div className="divider"></div>
@@ -31,7 +31,7 @@ function About() {
           <div className="content-col">
             <h3 className="section-label">WHAT I DO</h3>
             <div className="section-content">
-              <p className="highlight-item">Automation and Engineering</p>
+              <p className="highlight-item">Audio Software Testing & Automation</p>
               <p className="highlight-item">AI Implementation & Development</p>
               <p>Product Strategy & Community Growth</p>
               <p className="highlight-item">Technical Problem Solving</p>
