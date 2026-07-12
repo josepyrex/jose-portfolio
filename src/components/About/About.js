@@ -8,7 +8,7 @@ function About() {
     <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual Audio QA Engineer at Apple</span> working on Core Audio frameworks — obsessed with sound, thorough testing, and turning ideas into products.</h2>
+          <h2 className="about-title">Jose Francisco Perez Martinez is a <span className="accent">bilingual Audio QA Engineer at Apple</span> working on Core Audio frameworks. Obsessed with sound, thorough testing, and turning ideas into products.</h2>
         </div>
         
         <div className="divider"></div>
@@ -18,7 +18,7 @@ function About() {
           <div className="news-ticker">
             <div className="fade-left"></div>
             <div className="news-ticker-content">
-              <p>Currently building Livenue, a musician-venue booking platform for NYC. — Bridging the gap between creativity and technology. — Building things that matter to artists, one conversation at a time. —</p>
+              <p>Currently building Livenue, a musician-venue booking platform for NYC. // Bridging the gap between creativity and technology. // Building things that matter to artists, one conversation at a time. //</p>
             </div>
             <div className="fade-right"></div>
           </div>
