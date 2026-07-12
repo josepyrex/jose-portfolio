@@ -59,7 +59,7 @@ function Resume({ isOpen, onClose }) {
           {/* Contact Section */}
           <div className="resume-section">
             <div className="resume-section-header">
-              <div className="resume-dot resume-dot-teal"></div>
+              <div className="resume-dot resume-dot-1"></div>
               <h3>Contact</h3>
             </div>
             <div className="resume-section-content">
@@ -87,7 +87,7 @@ function Resume({ isOpen, onClose }) {
           {/* Experience Section */}
           <div className="resume-section">
             <div className="resume-section-header">
-              <div className="resume-dot resume-dot-yellow"></div>
+              <div className="resume-dot resume-dot-2"></div>
               <h3>Experience</h3>
             </div>
             <div className="resume-section-content">
@@ -148,7 +148,7 @@ function Resume({ isOpen, onClose }) {
           {/* Skills Section */}
           <div className="resume-section">
             <div className="resume-section-header">
-              <div className="resume-dot resume-dot-purple"></div>
+              <div className="resume-dot resume-dot-3"></div>
               <h3>Skills</h3>
             </div>
             <div className="resume-section-content">
@@ -199,7 +199,7 @@ function Resume({ isOpen, onClose }) {
           {/* Education Section */}
           <div className="resume-section">
             <div className="resume-section-header">
-              <div className="resume-dot resume-dot-red"></div>
+              <div className="resume-dot resume-dot-4"></div>
               <h3>Education</h3>
             </div>
             <div className="resume-section-content">
@@ -245,10 +245,10 @@ function Resume({ isOpen, onClose }) {
 
         {/* Animated Color Bar */}
         <div className="resume-color-bar" key={animationKey}>
-          <div className="resume-bar-segment resume-bar-teal"></div>
-          <div className="resume-bar-segment resume-bar-yellow"></div>
-          <div className="resume-bar-segment resume-bar-red"></div>
-          <div className="resume-bar-segment resume-bar-purple"></div>
+          <div className="resume-bar-segment resume-bar-1"></div>
+          <div className="resume-bar-segment resume-bar-2"></div>
+          <div className="resume-bar-segment resume-bar-3"></div>
+          <div className="resume-bar-segment resume-bar-4"></div>
         </div>
       </div>
     </div>

@@ -117,19 +117,20 @@
   display: inline-block;
 }
 
-.teal {
-  background-color: #2DD4BF;
-}
-
-.yellow {
+/* Teal ramp, brightest → deepest, matching link order */
+.ramp-1 {
   background-color: #5EEAD4;
 }
 
-.red {
+.ramp-2 {
+  background-color: #2DD4BF;
+}
+
+.ramp-3 {
   background-color: #14B8A6;
 }
 
-.purple {
+.ramp-4 {
   background-color: #0F766E;
 }
 

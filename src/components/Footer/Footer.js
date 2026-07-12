@@ -164,7 +164,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                   href="#resume" 
                   onClick={handleResumeClick} // Updated to use new handler
                 >
-                  <span className="link-circle teal"></span>
+                  <span className="link-circle ramp-1"></span>
                   <span className="link-text">{textElements.resume}</span>
                 </a>
               </li>
@@ -180,7 +180,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                     }, 1000);
                   }}
                 >
-                  <span className="link-circle yellow"></span>
+                  <span className="link-circle ramp-2"></span>
                   <span className="link-text">{textElements.music}</span>
                   <span className="arrow">↗</span>
                 </a>
@@ -197,7 +197,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                     }, 1000);
                   }}
                 >
-                  <span className="link-circle purple"></span>
+                  <span className="link-circle ramp-3"></span>
                   <span className="link-text">{textElements.github}</span>
                   <span className="arrow">↗</span>
                 </a>
@@ -214,7 +214,7 @@ function Footer({ isResumeOpen, setIsResumeOpen }) { // Add props
                     }, 1000);
                   }}
                 >
-                  <span className="link-circle red"></span>
+                  <span className="link-circle ramp-4"></span>
                   <span className="link-text">{textElements.instagram}</span>
                   <span className="arrow">↗</span>
                 </a>

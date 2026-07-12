@@ -162,20 +162,21 @@
   flex-shrink: 0;
 }
 
-.resume-dot-teal {
-  background: #2DD4BF;
-}
-
-.resume-dot-yellow {
+/* Teal ramp, brightest → deepest, matching section order */
+.resume-dot-1 {
   background: #5EEAD4;
 }
 
-.resume-dot-purple {
-  background: #0F766E;
+.resume-dot-2 {
+  background: #2DD4BF;
 }
 
-.resume-dot-red {
+.resume-dot-3 {
   background: #14B8A6;
+}
+
+.resume-dot-4 {
+  background: #0F766E;
 }
 
 .resume-section-content {
@@ -403,19 +404,20 @@
   animation-delay: 0.8s;
 }
 
-.resume-bar-teal {
-  background: #2DD4BF;
-}
-
-.resume-bar-yellow {
+/* Teal ramp, brightest → deepest, left to right */
+.resume-bar-1 {
   background: #5EEAD4;
 }
 
-.resume-bar-red {
+.resume-bar-2 {
+  background: #2DD4BF;
+}
+
+.resume-bar-3 {
   background: #14B8A6;
 }
 
-.resume-bar-purple {
+.resume-bar-4 {
   background: #0F766E;
 }
 
