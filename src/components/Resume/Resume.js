@@ -45,7 +45,7 @@ function Resume({ isOpen, onClose }) {
         <div className="resume-header">
           <div className="resume-header-left">
             <h2 className="resume-title">Jose Francisco Perez Martinez</h2>
-            <p className="resume-subtitle">Product Manager & Community Builder</p>
+            <p className="resume-subtitle">Audio QA Engineer at Apple</p>
           </div>
           <button className="resume-close" onClick={onClose}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -94,13 +94,13 @@ function Resume({ isOpen, onClose }) {
               <div className="resume-experience-item">
                 <div className="resume-experience-header">
                   <div>
-                    <h4 className="resume-job-title">Automation Engineer</h4>
+                    <h4 className="resume-job-title">Audio QA Engineer</h4>
                     <p className="resume-company">Apple Inc.</p>
                   </div>
                   <span className="resume-date">Jun 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                   Testing audio quality across iPhone, HomePod, and Apple TV. Validating everything from spatial audio rendering to codec performance. The work combines manual testing with Python automation, analyzing how audio behaves across different hardware and software configurations. Im learning to systematically isolate issues in audio drivers and firmware while building test frameworks that catch regressions before they reach millions of users.
+                   Testing audio quality across iPhone, HomePod, and Apple TV. Validating everything from spatial audio rendering to codec performance. The work combines manual testing with Python automation, analyzing how audio behaves across different hardware and software configurations. I'm learning to systematically isolate issues in audio drivers and firmware while building test frameworks that catch regressions before they reach millions of users.
                 </p>
               </div>
 
@@ -113,7 +113,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Mar 2024 - Present</span>
                 </div>
                 <p className="resume-description">
-                  Co-founded an swimwear brand that went from idea to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service and international manufacturing.
+                  Co-founded a swimwear brand that went from idea to Miami Swim Week in under a year. Managed everything from Shopify operations to bilingual customer service and international manufacturing.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">May 2022 - Jun 2024</span>
                 </div>
                 <p className="resume-description">
-                  Led the transformation concept of a toy company into a luxury collectible brand. Built the company website and handled UX design while keeping design, marketing, and engineering teams aligned.
+                  Led the transformation of a toy company into a luxury collectible brand. Built the company website and handled UX design while keeping design, marketing, and engineering teams aligned.
                 </p>
               </div>
 
@@ -139,7 +139,7 @@ function Resume({ isOpen, onClose }) {
                   <span className="resume-date">Jan 2020 - May 2023</span>
                 </div>
                 <p className="resume-description">
-                  Built a music discovery platform and lead a team 20+ volunteers grew to 10K monthly visitors by focusing on human-curated recommendations.
+                  Built a music discovery platform and led a team of 20+ volunteers, growing to 10K monthly visitors by focusing on human-curated recommendations.
                 </p>
               </div>
             </div>
@@ -153,6 +153,14 @@ function Resume({ isOpen, onClose }) {
             </div>
             <div className="resume-section-content">
               <div className="resume-skills-grid">
+                <div className="resume-skill-category">
+                  <h5>Audio QA & Testing</h5>
+                  <ul>
+                    <li>Manual & automated audio testing</li>
+                    <li>Python test automation</li>
+                    <li>Regression testing & bug isolation</li>
+                  </ul>
+                </div>
                 <div className="resume-skill-category">
                   <h5>Languages</h5>
                   <ul>
@@ -171,7 +179,7 @@ function Resume({ isOpen, onClose }) {
                 <div className="resume-skill-category">
                   <h5>Programming & Dev</h5>
                   <ul>
-                    <li>HTML/CSS, JavaScript</li>
+                    <li>Python, HTML/CSS, JavaScript</li>
                     <li>Next.js, WordPress</li>
                     <li>Webflow, Shopify Liquid</li>
                   </ul>
@@ -231,7 +239,7 @@ function Resume({ isOpen, onClose }) {
         {/* Footer */}
         <div className="resume-footer">
           <div className="resume-footer-left">
-            <span>Last updated: July 2025</span>
+            <span>Last updated: July 2026</span>
           </div>
           <div className="resume-footer-right">
             <button className="resume-download-btn" onClick={handleDownload}>
